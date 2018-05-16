@@ -8,8 +8,8 @@ By incorporating our latest SDK for Android in your app, we support you in handl
 
 # MobileSDK-Android reference links
 
-Please check our <a href="https://github.com/SelligentMarketingCloud/MobileSDK-Android/blob/master/1.8/Documentation/IOS%20-%20Using%20the%20SDK%201.8.pdf" target="_blank">SDK full documentation</a>
+Please check our <a href="https://github.com/SelligentMarketingCloud/MobileSDK-Android/blob/master/Documentation/Android%20-%20Using%20the%20SDK%201.8.0.pdf" target="_blank">SDK full documentation</a>
 
-Use our <a href="https://github.com/SelligentMarketingCloud/MobileSDK-Android/blob/master/1.8/Documentation/MobileSDK%20Reference.pdf" target="_blank">Reference manual</a> to quickly check all our available methods
+Use our <a href="https://github.com/SelligentMarketingCloud/MobileSDK-Android/blob/master/Documentation/Android%20-%20MobileSDK%20Reference%201.8.0.pdf" target="_blank">Reference manual</a> to quickly check all our available methods
 
-Download our <a href="https://github.com/SelligentMarketingCloud/MobileSDK-Android/blob/master/1.8/Documentation/iOSSDKTemplate.zip" target="_blank">iOS example application</a> to see how our SDK needs to be implemented
+Download our <a href="https://github.com/SelligentMarketingCloud/MobileSDK-Android/blob/master/Documentation/AndroidSDKTemplate.zip" target="_blank">Android example application</a> to see how our SDK needs to be implemented
