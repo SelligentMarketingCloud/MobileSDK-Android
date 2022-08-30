@@ -233,7 +233,7 @@ androidx.concurrent:concurrent-futures:1.1.0
 
 - PlotProjects (only if you want, and have, the geolocation module)
 ```gradle
-com.plotprojects:plot-android:3.10.0
+com.plotprojects:plot-android:3.17.0
 ```
 
 For Gradle to find that dependency, you must add a reference to the Maven Plot repository. 
@@ -248,6 +248,9 @@ allprojects {
   } 
 }
 ```
+>Notes:
+>- Using plotProject 3.17 forces you to update your minSdkVersion to 21
+>- Other dependencies are needed to make PlotProject work. For more information, <a href="https://files.plotprojects.com/documentation/android/3.17.0/how-to-guides/Android-integration-guide/">go and check their documentation</a>.
 
 <a name="use_sdk"></a>
 ## How to use the SDK
