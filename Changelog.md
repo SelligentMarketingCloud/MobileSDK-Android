@@ -1,5 +1,9 @@
 # SDK Changelog
 
+- Version 4.0.1
+	- Corrected a bug where the notification is not displayed when the SDK is given a custom channel id.
+	- Improved the enableNotification() in case the notification permission changed
+
 - Version 4.0.0
 	- Removed several method and classes that had been deprecated for a while
 	- Replaced the AsyncTasks by Kotlin coroutines

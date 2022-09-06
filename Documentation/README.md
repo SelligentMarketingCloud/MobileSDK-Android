@@ -149,7 +149,7 @@ Since 3.8.3, our SDK is available on Maven Central.
 In the build.gradle file in your app module, add the following line:
 
 ```xml
-implementation 'com.selligent.sdk:selligent_mobile_sdk:4.0.0'
+implementation 'com.selligent.sdk:selligent_mobile_sdk:4.0.1'
 ```
 
 You need to have MavenCentral in your list of repositories.
@@ -233,7 +233,7 @@ androidx.concurrent:concurrent-futures:1.1.0
 
 - PlotProjects (only if you want, and have, the geolocation module)
 ```gradle
-com.plotprojects:plot-android:3.17.0
+com.plotprojects:plot-android:3.10.0
 ```
 
 For Gradle to find that dependency, you must add a reference to the Maven Plot repository. 
@@ -248,10 +248,6 @@ allprojects {
   } 
 }
 ```
->Notes:
->- Using plotProject 3.17 forces you to update your minSdkVersion to 21
->- Other dependencies are needed to make PlotProject work. For more information, <a href="https://files.plotprojects.com/documentation/android/3.17.0/how-to-guides/Android-integration-guide/">go and check their documentation</a>.
-
 
 <a name="use_sdk"></a>
 ## How to use the SDK
@@ -421,7 +417,10 @@ public void onRequestPermissionsResult(int requestCode, @NonNull String[] permis
     {
         if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
         {
-            //Do stuff 
+            // Calling this method now will tell the Mobile platform that the notifications are now allowed (as there was probably a previous
+			// communication when it was not approved yet, as far as the platform knows, they are not).
+			// Otherwise it will be done automatically the next time the app starts, when the SDK sees that the notifications are now allowed.
+			SMManager.getInstance().enableNotifications();
         }
         else
         {
