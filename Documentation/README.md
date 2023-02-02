@@ -149,7 +149,7 @@ Since 3.8.3, our SDK is available on Maven Central.
 In the build.gradle file in your app module, add the following line:
 
 ```xml
-implementation 'com.selligent.sdk:selligent_mobile_sdk:4.0.1'
+implementation 'com.selligent.sdk:selligent_mobile_sdk:4.0.2'
 ```
 
 You need to have MavenCentral in your list of repositories.
@@ -170,7 +170,7 @@ And select the file. Once it is done, synchronize and build the project.
 #### minSdkVersion
 Due to changes in Firebase and Google-Play-Services and to support Huawei Services, the `minSdkVersion` is now `19`.
 
-> The SDK was built using the Gradle Plugin 7.2.2
+> The SDK was built using the Gradle Plugin 7.3.1
 
 <a name="other_lib"></a>
 ## Other libraries
@@ -178,12 +178,12 @@ You need to add some external dependencies in your app gradle file:
 - Firebase messaging and Firebase-core 
   - If your version of Gradle is 5 or higher, you can simply add
     ```gradle
-    implementation platform('com.google.firebase:firebase-bom:30.3.2')
+    implementation platform('com.google.firebase:firebase-bom:30.4.0')
     implementation 'com.google.firebase:firebase-messaging'
     ```
   - If you are using a lower version of Gradle, you need to specify the version of Firebase-messaging 
     ```gradle
-    com.google.firebase:firebase-messaging:23.0.7
+    com.google.firebase:firebase-messaging:23.0.8
     ```
  
 The version of Firebase must be at least 19 to be compatible with our SDK 3.x. Firebase 19 requires the use of the "AndroidX" libraries instead of the old "support" ones. 
@@ -233,8 +233,9 @@ androidx.concurrent:concurrent-futures:1.1.0
 
 - PlotProjects (only if you want, and have, the geolocation module)
 ```gradle
-com.plotprojects:plot-android:3.10.0
+com.plotprojects:plot-android:3.18.2
 ```
+(Other dependencies are needed for PlotProject to work, check their documentation)
 
 For Gradle to find that dependency, you must add a reference to the Maven Plot repository. 
 In the list of repositories in your top build.gradle file, add:
@@ -1251,7 +1252,7 @@ SMManager.getInstance().sendSMEvent(event);
 ### Geolocation
 Geolocation is managed through a 3rd party library (`PlotProjects`), so you need to [add a dependency](#other_lib). 
 
-To configure that library, you must add a `plotconfig.json` file in the asset folder of your app ([more information](https://files.plotprojects.com/documentation/android/3.17.0/index.html))
+To configure that library, you must add a `plotconfig.json` file in the asset folder of your app ([more information](https://files.plotprojects.com/documentation/android/3.18.2/index.html))
 ```json
 {
     "publicToken": "REPLACE_ME",

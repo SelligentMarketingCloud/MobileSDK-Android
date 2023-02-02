@@ -1,5 +1,9 @@
 # SDK Changelog
 
+- Version 4.0.2
+	- Corrected a bug where the "seen" and "deleted" properties of an In-app message could be wrongly overwritten
+	- Improved overal robustness
+
 - Version 4.0.1
 	- Corrected a bug where the notification is not displayed when the SDK is given a custom channel id.
 	- Improved the enableNotification() in case the notification permission changed
