@@ -1,6 +1,6 @@
 # SDK Changelog
 
-- Version 4.0.2
+- Version 4.0.3
 	- Corrected a bug where the "seen" and "deleted" properties of an In-app message could be wrongly overwritten
 	- Improved overal robustness
 
