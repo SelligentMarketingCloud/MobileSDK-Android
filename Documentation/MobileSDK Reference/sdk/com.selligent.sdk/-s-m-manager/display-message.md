@@ -7,6 +7,10 @@ open fun [displayMessage](display-message.md)(messageId: [String](https://develo
 
 Display the given message (remote or In App) whose id is given, like if clicking on the notification
 
+#### Deprecated
+
+since 4.1.0, use [displayInAppMessage](display-in-app-message.md) instead
+
 ## Parameters
 
 androidJvm

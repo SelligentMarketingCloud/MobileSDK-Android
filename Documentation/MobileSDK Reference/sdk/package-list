@@ -178,6 +178,9 @@ $dokka.location:com.selligent.sdk/SMManager/deleteInAppMessages/#java.lang.Strin
 $dokka.location:com.selligent.sdk/SMManager/disableGeolocation/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/disable-geolocation.md
 $dokka.location:com.selligent.sdk/SMManager/disableInAppMessages/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/disable-in-app-messages.md
 $dokka.location:com.selligent.sdk/SMManager/disableNotifications/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/disable-notifications.md
+$dokka.location:com.selligent.sdk/SMManager/displayInAppMessage/#java.lang.String#android.app.Activity/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/display-in-app-message.md
+$dokka.location:com.selligent.sdk/SMManager/displayLastReceivedNotification/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/display-last-received-notification.md
+$dokka.location:com.selligent.sdk/SMManager/displayLastReceivedNotificationContent/#android.app.Activity/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/display-last-received-notification-content.md
 $dokka.location:com.selligent.sdk/SMManager/displayLastReceivedRemotePushNotification/#android.app.Activity/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/display-last-received-remote-push-notification.md
 $dokka.location:com.selligent.sdk/SMManager/displayMessage/#java.lang.String#android.app.Activity/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/display-message.md
 $dokka.location:com.selligent.sdk/SMManager/displayNotification/#android.content.Context#android.content.Intent/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/display-notification.md
@@ -203,6 +206,7 @@ $dokka.location:com.selligent.sdk/SMManager/isPostNotificationPermissionGranted/
 $dokka.location:com.selligent.sdk/SMManager/observerManager/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/observer-manager.md
 $dokka.location:com.selligent.sdk/SMManager/reload/#com.selligent.sdk.SMSettings#com.selligent.sdk.SMCallback/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/reload.md
 $dokka.location:com.selligent.sdk/SMManager/requestPostNotificationPermission/#android.app.Activity#int/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/request-post-notification-permission.md
+$dokka.location:com.selligent.sdk/SMManager/retrieveLastReceivedNotificationContent/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/retrieve-last-received-notification-content.md
 $dokka.location:com.selligent.sdk/SMManager/retrieveNotificationMessage/#android.content.Intent#com.selligent.sdk.OnSMNotificationMessageRetrieved/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/retrieve-notification-message.md
 $dokka.location:com.selligent.sdk/SMManager/sendDeviceInfos/#com.selligent.sdk.SMDeviceInfos/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/send-device-infos.md
 $dokka.location:com.selligent.sdk/SMManager/sendSMEvent/#com.selligent.sdk.SMEvent/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-manager/send-s-m-event.md
@@ -286,6 +290,8 @@ $dokka.location:com.selligent.sdk/SMObserverManager/observeInAppContents/#androi
 $dokka.location:com.selligent.sdk/SMObserverManager/observeInAppContents/#androidx.lifecycle.LifecycleOwner#androidx.lifecycle.Observer<java.util.HashMap<java.lang.String,java.lang.Integer>>/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-observer-manager/observe-in-app-contents.md
 $dokka.location:com.selligent.sdk/SMObserverManager/observeInAppMessages/#androidx.lifecycle.LifecycleOwner#androidx.lifecycle.Observer<com.selligent.sdk.SMInAppMessage[]>#boolean/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-observer-manager/observe-in-app-messages.md
 $dokka.location:com.selligent.sdk/SMObserverManager/observeInAppMessages/#androidx.lifecycle.LifecycleOwner#androidx.lifecycle.Observer<com.selligent.sdk.SMInAppMessage[]>/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-observer-manager/observe-in-app-messages.md
+$dokka.location:com.selligent.sdk/SMObserverManager/observePushReceived/#androidx.lifecycle.LifecycleOwner#androidx.lifecycle.Observer<com.selligent.sdk.SMNotificationMessage>#boolean/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-observer-manager/observe-push-received.md
+$dokka.location:com.selligent.sdk/SMObserverManager/observePushReceived/#androidx.lifecycle.LifecycleOwner#androidx.lifecycle.Observer<com.selligent.sdk.SMNotificationMessage>/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-observer-manager/observe-push-received.md
 $dokka.location:com.selligent.sdk/SMObserverManager/observeToken/#androidx.lifecycle.LifecycleOwner#androidx.lifecycle.Observer<java.lang.String>#boolean/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-observer-manager/observe-token.md
 $dokka.location:com.selligent.sdk/SMObserverManager/observeToken/#androidx.lifecycle.LifecycleOwner#androidx.lifecycle.Observer<java.lang.String>/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-observer-manager/observe-token.md
 $dokka.location:com.selligent.sdk/SMRemoteMessageDisplayType.Automatic///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}sdk/com.selligent.sdk/-s-m-remote-message-display-type/-automatic/index.md

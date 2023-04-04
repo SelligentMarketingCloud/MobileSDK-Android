@@ -3,7 +3,7 @@
 # enableInAppMessages
 
 [androidJvm]\
-open fun [enableInAppMessages](enable-in-app-messages.md)(refreshType: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html))
+open fun [enableInAppMessages](enable-in-app-messages.md)(refreshType: [SMInAppRefreshType](../-s-m-in-app-refresh-type/index.md))
 
 This method enables the management of &quot;in app&quot; messages.
 

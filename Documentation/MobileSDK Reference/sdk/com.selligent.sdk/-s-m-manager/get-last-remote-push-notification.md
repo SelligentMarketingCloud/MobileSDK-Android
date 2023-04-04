@@ -10,3 +10,7 @@ Get the id and the title of the latest received remote notification This is most
 #### Return
 
 a HashMap containing the &quot;id&quot; and &quot;title&quot; of the last remote notification
+
+#### Deprecated
+
+since 4.0.1, use [retrieveLastReceivedNotificationContent](retrieve-last-received-notification-content.md) instead

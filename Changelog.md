@@ -1,5 +1,10 @@
 # SDK Changelog
 
+- Version 4.1.0
+	- Renamed some methods to be in sync with the IOS SDK
+	- Added a method to redisplay the last received notification
+	- Added an observer to be warned when a push is received (while the app is in foreground)
+
 - Version 4.0.3
 	- Corrected a bug where the "seen" and "deleted" properties of an In-app message could be wrongly overwritten
 	- Improved overal robustness

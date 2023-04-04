@@ -149,7 +149,7 @@ Since 3.8.3, our SDK is available on Maven Central.
 In the build.gradle file in your app module, add the following line:
 
 ```xml
-implementation 'com.selligent.sdk:selligent_mobile_sdk:4.0.2'
+implementation 'com.selligent.sdk:selligent_mobile_sdk:4.1.0'
 ```
 
 You need to have MavenCentral in your list of repositories.
@@ -170,7 +170,7 @@ And select the file. Once it is done, synchronize and build the project.
 #### minSdkVersion
 Due to changes in Firebase and Google-Play-Services and to support Huawei Services, the `minSdkVersion` is now `19`.
 
-> The SDK was built using the Gradle Plugin 7.3.1
+> The SDK was built using the Gradle Plugin 7.4.2
 
 <a name="other_lib"></a>
 ## Other libraries
@@ -203,8 +203,8 @@ apply plugin: 'com.google.gms.google-services'
 
 - Kotlin coroutines
 ```gradle
-androidx.lifecycle:lifecycle-runtime-ktx:2.5.1
-org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.2
+androidx.lifecycle:lifecycle-runtime-ktx:2.6.1
+org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4
 ```
   
 - If you plan on sending Map type push, you need a dependency to play-services-maps:
@@ -225,7 +225,7 @@ androidx.cardview:cardview
 - WorkManager 
 > **These two dependencies are mandatory if you are going to send encrypted push to your app or rich push.** 
 ```gradle
-androidx.work:work-runtime:2.7.1
+androidx.work:work-runtime:2.8.1
 androidx.concurrent:concurrent-futures:1.1.0
 ```
 > <br>They replace FirebaseJobDispatcher which is deprecated and not used anymore by the Selligent SDK.
@@ -233,7 +233,7 @@ androidx.concurrent:concurrent-futures:1.1.0
 
 - PlotProjects (only if you want, and have, the geolocation module)
 ```gradle
-com.plotprojects:plot-android:3.18.2
+com.plotprojects:plot-android:3.19.1
 ```
 (Other dependencies are needed for PlotProject to work, check their documentation)
 
@@ -922,17 +922,28 @@ If you want to change this behaviour, use the overload that requires a Boolean a
   ```java
   SMManager.getInstance().getObserverManager().observeEvent(@NonNull LifecycleOwner lifecycleOwner, @NonNull Observer<String> observer)
   ```
+  - `Push received`: When a push is received while the app is in foreground, the corresponding SMNotificationMessage object is sent through the app to allow it to react to it.
+  ```java
+  SMManager.getInstance().getObserverManager().observePushReceived(@NonNull LifecycleOwner lifecycleOwner, @NonNull Observer<SMNotificationMessage> observer)
+  ```
 
 <a name="push_manual_display"></a>
 #### Manual display of a push notification
 If you set `RemoteMessageDisplayType` to `None` and listen to the broadcast `BROADCAST_EVENT_RECEIVED_REMOTE_NOTIFICATION`, you will want to use the following methods: 
 
 ```java
-// This method will display the last push received (the SDK only stores the last one), using a dialog or a dedicated Activity, depending on its type.
+// DEPRECATED in 4.1
 SMManager.getInstance().displayLastReceivedRemotePushNotification(activity);
-
-//  This method will return a HashMap containing the id and title of the push (the keys are "id" and "title").
 SMManager.getInstance().getLastRemotePushNotification();
+
+// This method will display the in-app received with a push notification (the SDK only stores the last one), using a dialog or a dedicated Activity, depending on its type.
+SMManager.getInstance().displayLastReceivedNotificationContent(activity);
+
+// This method will return an SMNotificationMessage representing the last push
+SMManager.getInstance().retrieveLastReceivedNotificationContent();
+
+// Redisplay the last received push notification (the notification itself, not the potential in-app linked)
+SMManager.getInstance().displayLastReceivedNotification()
 ```
 
 <a name="push_manual_management"></a>
@@ -1028,8 +1039,11 @@ SMManager.getInstance().getInAppMessages(final SMInAppMessageReturn callbackEven
 #### Display of an In-App message
 Once you have the In-App messages, you can display one using the following method:
 ```java
-// messageId is the id of the In-App message to display (received by listening to the broadcast as discussed in Reception of the messages) and activity the Activity that will display it.
+// DEPRECATED in 4.1.
 SMManager.getInstance().displayMessage(messageId, activity);
+
+// messageId is the id of the In-App message to display (received by listening to the broadcast as discussed in Reception of the messages) and activity the Activity that will display it.
+SMManager.getInstance().displayInAppMessage(messageId, activity);
 ```
  
 It will be displayed the way the push notifications are.
