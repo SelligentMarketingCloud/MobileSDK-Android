@@ -74,7 +74,6 @@ Selligent welcomes any recommendations or suggestions regarding the manual, as i
        * [**SMEventUserLogout**](#events_logout) 
      * [**Custom**](#events_custom)
        * [**SMEvent**](#events_event) 
-   * [**Geolocation**](#geolocation)
    * [**Broadcasts -- deprecated**](#general_broadcasts)
      * [**Generic broadcasts**](#broadcasts_generic)
      * [**Local broadcasts**](#broadcasts_local)
@@ -149,7 +148,7 @@ Since 3.8.3, our SDK is available on Maven Central.
 In the build.gradle file in your app module, add the following line:
 
 ```xml
-implementation 'com.selligent.sdk:selligent_mobile_sdk:4.1.0'
+implementation 'com.selligent.sdk:selligent_mobile_sdk:4.2.0'
 ```
 
 You need to have MavenCentral in your list of repositories.
@@ -178,12 +177,12 @@ You need to add some external dependencies in your app gradle file:
 - Firebase messaging and Firebase-core 
   - If your version of Gradle is 5 or higher, you can simply add
     ```gradle
-    implementation platform('com.google.firebase:firebase-bom:30.4.0')
+    implementation platform('com.google.firebase:firebase-bom:32.1.1')
     implementation 'com.google.firebase:firebase-messaging'
     ```
   - If you are using a lower version of Gradle, you need to specify the version of Firebase-messaging 
     ```gradle
-    com.google.firebase:firebase-messaging:23.0.8
+    com.google.firebase:firebase-messaging:23.1.2
     ```
  
 The version of Firebase must be at least 19 to be compatible with our SDK 3.x. Firebase 19 requires the use of the "AndroidX" libraries instead of the old "support" ones. 
@@ -204,7 +203,7 @@ apply plugin: 'com.google.gms.google-services'
 - Kotlin coroutines
 ```gradle
 androidx.lifecycle:lifecycle-runtime-ktx:2.6.1
-org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4
+org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1
 ```
   
 - If you plan on sending Map type push, you need a dependency to play-services-maps:
@@ -230,25 +229,6 @@ androidx.concurrent:concurrent-futures:1.1.0
 ```
 > <br>They replace FirebaseJobDispatcher which is deprecated and not used anymore by the Selligent SDK.
 
-
-- PlotProjects (only if you want, and have, the geolocation module)
-```gradle
-com.plotprojects:plot-android:3.19.1
-```
-(Other dependencies are needed for PlotProject to work, check their documentation)
-
-For Gradle to find that dependency, you must add a reference to the Maven Plot repository. 
-In the list of repositories in your top build.gradle file, add:
-```gradle
-allprojects { 
-  repositories { 
-    … 
-    maven { 
-      url 'https://maven-repo.plotprojects.com' 
-    } 
-  } 
-}
-```
 
 <a name="use_sdk"></a>
 ## How to use the SDK
@@ -320,7 +300,6 @@ There are optional settings on `SMSettings`:
 | `LoadCacheAsynchronously` | Setting this value to true will make the SDK load the cache at start using a separate thread, making the loading asynchronously. This will improve the performance but has an impact on how you retrieve contents, especially the In-App contents. When set to true, it is recommended to use the method returning the In-App contents using a callback. <br> Its default value is `false`. |
 | `DoNotFetchTheToken` | Setting this value to true will prevent the SDK from fetching the token. Instead, you will have to do it yourself and give it to the SDK using the following method: `SMManager.getInstance().setFirebaseToken(String token)`. <br> Its default value is `false` |
 | `DoNotListenToThePush` | Setting this value to true will prevent the SDK from listening to the push. Instead, you will have to do it yourself and either give it to the SDK using the following method: `SMManager.getInstance().displayNotification(Context context, Intent intent)` or use the SDK to retrieve the payload from the intent and then manage the notification yourself. <br> Its default value is `false` |
-| `ConfigureGeolocation` | This will tell the SDK to initialize the geolocation capabilities. For it to work, you need to add a [dependency to the PlotProject library](#other_lib) and a [setting file](#geolocation). <br> Its default value is `false` |
 | `NotificationChannelId` | This will tell use an existing notification channel. If there is no channel with that id, one will be created. The default value is the id of the default channel used by the SDK. |
 | `NotificationChannelName` | This will specify the name of the notification channel, that will be visible in the Settings of the device. If the notification channel does not exist yet, it will be created with that name, otherwise, the channel will be updated if needed (it will NOT be updated if the name is null, empty, equal to the current value or the default one). <br> Default value is `SMDefaultChannel`. |
 | `NotificationChannelDescription` | This will specify the description of the notification channel, that will be visible in the Settings of the device. If the notification channel does not exist yet, it will be created with that description, otherwise, the channel will be updated if needed (it will NOT be updated if the description is null, empty, equal to the current value or the default one). <br> Default value is an empty string. |
@@ -1261,35 +1240,6 @@ SMEvent event = new SMEvent("someEventName", hash, new SMCallback() {
 
 SMManager.getInstance().sendSMEvent(event);
 ```
-
-<a name="geolocation"></a>
-### Geolocation
-Geolocation is managed through a 3rd party library (`PlotProjects`), so you need to [add a dependency](#other_lib). 
-
-To configure that library, you must add a `plotconfig.json` file in the asset folder of your app ([more information](https://files.plotprojects.com/documentation/android/3.18.2/index.html))
-```json
-{
-    "publicToken": "REPLACE_ME",
-    "enableOnFirstRun": true,
-    "maxRegionsMonitored": 10,
-    "automaticallyAskLocationPermission": true
-}
-```
-
-To tell the SDK to use the Geolocation, set the property `ConfigureGeolocation` to `true` on the `SMSettings` object. 
-
-If you set `enableOnFirstRun` to false in the `plotconfig.json` file, geolocation will be initialized but **NOT** enabled. 
-So the permission will not be asked to the user and you will have to enable it manually. 
-
-To do so, you can call the method `SMManager.getInstance().enableGeolocation()`. 
-Note that this will enable the geolocation but not ask the permission, you must do it yourself in that case.
-
-This method, along with `SMManager.getInstance().disableGeolocation()` and `SMManager.getInstance().isGeolocationEnabled()` can also be used to provide the user 
-with an opt-in/opt-out functionality.
-
-> Don't initialize or call any method of the PlotProjects API in your app, everything is managed by our SDK. <br>
-> Our SDK sets the icon used by plotprojects for the geolocation notifications, reusing the one that you already gave us, so no need to specify it a second time in the config file. <br>
-> Default value for `enableOnFirstRun` is `true`, so if you specify only the token in the config file, you don’t have to call any method.
 
 <a name="general_broadcasts"></a>
 ### Broadcasts -- deprecated

@@ -3,7 +3,7 @@
 # getInAppContents
 
 [androidJvm]\
-open fun [getInAppContents](get-in-app-contents.md)(category: [String](https://developer.android.com/reference/kotlin/java/lang/String.html), type: [SMContentType](../-s-m-content-type/index.md), max: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html)&lt;[SMInAppContent](../-s-m-in-app-content/index.md)&gt;
+open fun [getInAppContents](get-in-app-contents.md)(category: [String](https://developer.android.com/reference/kotlin/java/lang/String.html), type: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), max: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html)&lt;[SMInAppContent](../-s-m-in-app-content/index.md)&gt;
 
 Gets the list of valid [SMInAppContent](../-s-m-in-app-content/index.md) for the given type and category. Use this method if you do not want to implement our Fragments.
 
@@ -22,7 +22,7 @@ androidJvm
 | max | The number of contents to get. -1 to get them all. |
 
 [androidJvm]\
-open fun [getInAppContents](get-in-app-contents.md)(category: [String](https://developer.android.com/reference/kotlin/java/lang/String.html), type: [SMContentType](../-s-m-content-type/index.md), max: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), callbackEvent: [SMInAppContentReturn](../-s-m-in-app-content-return/index.md))
+open fun [getInAppContents](get-in-app-contents.md)(category: [String](https://developer.android.com/reference/kotlin/java/lang/String.html), type: [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), max: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), callbackEvent: [SMInAppContentReturn](../-s-m-in-app-content-return/index.md))
 
 Gets the list of valid [SMInAppContent](../-s-m-in-app-content/index.md) for the given type and category. Use this method if you do not want to implement our Fragments.
 

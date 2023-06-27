@@ -44,4 +44,4 @@ An In App content
 | [displayMode](display-mode.md) | [androidJvm]<br>open val [displayMode](display-mode.md): [SMInAppContent.DisplayMode](-display-mode/index.md) |
 | [image](image.md) | [androidJvm]<br>@get:[Nullable](https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html)<br>open val [image](image.md): [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html) |
 | [links](links.md) | [androidJvm]<br>open val [links](links.md): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)&lt;[SMLink](../-s-m-link/index.md)&gt; |
-| [type](type.md) | [androidJvm]<br>open val [type](type.md): [SMContentType](../-s-m-content-type/index.md) |
+| [type](type.md) | [androidJvm]<br>open val [type](type.md): [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |
