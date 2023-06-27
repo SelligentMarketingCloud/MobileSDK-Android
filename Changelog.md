@@ -1,5 +1,9 @@
 # SDK Changelog
 
+- Version 4.2.0
+	- Removed all references to PlotProject
+	- Deprecated all geolocation related methods
+
 - Version 4.1.0
 	- Renamed some methods to be in sync with the IOS SDK
 	- Added a method to redisplay the last received notification
