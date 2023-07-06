@@ -1,5 +1,10 @@
 # SDK Changelog
 
+- Version 4.2.1
+	- Fixed a bug causing an exception when redisplaying a rich push notification
+	- Fixed a bug causing an empty notification to appear when redisplaying a notification although none had been received yet.
+	- Added robustness when deserializing events
+
 - Version 4.2.0
 	- Removed all references to PlotProject
 	- Deprecated all geolocation related methods

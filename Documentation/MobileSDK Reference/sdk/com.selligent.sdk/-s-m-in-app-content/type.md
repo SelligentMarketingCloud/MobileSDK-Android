@@ -3,4 +3,4 @@
 # type
 
 [androidJvm]\
-open val [type](type.md): [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)
+open val [type](type.md): [SMContentType](../-s-m-content-type/index.md)

@@ -1,5 +1,5 @@
 # Android – Using the SDK
-<a name="foreword"></a>
+
 ## Foreword
 
 Copyright
@@ -16,86 +16,83 @@ User is aware that this manual may contain errors or inaccuracies and that it ma
 
 Selligent welcomes any recommendations or suggestions regarding the manual, as it helps to continuously improve the quality of our products and manuals.
 
-<a name="contents"></a>
+
 ## Table of Contents
 
-* [**Foreword**](#foreword)
-* [**Table of contents**](#contents)
-* [**Intro**](#intro)
-* [**Creating an application**](#creating_app)
-  * [**Google**](#creating_app_google)
-* [**Including the SDK in your project**](#including_sdk)
-  * [**SDK library**](#sdk_library)
-    * [**Add the dependency**](#add_dependency)
-    * [**Import the Selligent library**](#import_library)
-    * [**minSdkVersion**](#minSdkVersion)
-  * [**Other libraries**](#other_lib)
-* [**How to use the SDK**](#use_sdk)
-  * [**Starting the SDK**](#start_sdk)
-    * [**Extending Application**](#extending_app)
-    * [**Start**](#start) 
-      * [**Optional settings**](#optional_settings) 
-  * [**Device id**](#device_id)
-  * [**Push notifications**](#push_notifications)
-    * [**Permissions for Push notifications**](#push_notifications_permissions)
-    * [**Listening to the push notifications and displaying the linked In-App message or executing the main action**](#listening_push)
-      * [**Extending SMBaseActivity**](#extending_smbaseactivity)
-    * [**Customization**](#customization)
-      * [**Setting a specific icon**](#setting_icon)
-      * [**Setting a specific Activity**](#setting_activity)
-    * [**Design customization**](#design_custom)
-      * [**Dialog**](#design_custom_dialog)
-      * [**Activities**](#design_custom_activities)
-    * [**Retrieving the Firebase Cloud Messaging (FCM) token from the SDK**](#fcm_token)
-      * [**Broadcast -- deprecated**](#fcm_broadcast)
-      * [**Observer**](#fcm_observer)
-      * [**SMManager.getInstance().getGCMToken**](#fcm_helper)
-    * [**Enabling/disabling the notifications**](#push_helpers)
-    * [**Setup for special push**](#special_push)
-      * [**Map**](#special_push_map)
-      * [**Event**](#special_push_event)
-    * [**Broadcasts -- deprecated**](#push_broadcasts)
-    * [**Observers**](#push_observers)
-    * [**Manual display of a push notification**](#push_manual_display)
-    * [**Manual management of the push**](#push_manual_management)
-  * [**In-App messages**](#iam)
-     * [**Permissions**](#iam_permissions)
-     * [**Enabling/disabling the In App-messages**](#iam_helpers)
-     * [**Reception of the messages**](#iam_reception)
-     * [**Display of an In-App message**](#iam_display)
-     * [**Broadcasts -- deprecated**](#iam_broadcasts)
-     * [**Observers**](#iam_observers)
-   * [**Events**](#events)
-     * [**Registration/Unregistration**](#events_registerunregister)
-       * [**SMEventUserRegister**](#events_register)
-       * [**SMEventUserUnregister**](#events_unregister)
-     * [**Login/Logout**](#events_loginglogout)
-       * [**SMEventUserLogin**](#events_login)
-       * [**SMEventUserLogout**](#events_logout) 
-     * [**Custom**](#events_custom)
-       * [**SMEvent**](#events_event) 
-   * [**Broadcasts -- deprecated**](#general_broadcasts)
-     * [**Generic broadcasts**](#broadcasts_generic)
-     * [**Local broadcasts**](#broadcasts_local)
-   * [**Observers**](#general_observers)
-   * [**Translations**](#translations)
- * [**Proguard**](#proguard)
- * [**Use cases**](#usecases)
-   * [**App with one activity**](#usecases_apponeactivity) 
-   * [**App with many activities**](#usecases_appmanyctivities)
-   * [**App with many activities and a Splash screen**](#usecases_appmanyctivities_splash)
- * [**Troubleshooting/FAQ**](#troubleshooting_faq)
+<!--TOC-->
+  - [Intro](#intro)
+  - [Creating an Application](#creating-an-application)
+    - [Google](#google)
+  - [Including the SDK in your project](#including-the-sdk-in-your-project)
+    - [SDK library](#sdk-library)
+    - [Add the dependency](#add-the-dependency)
+      - [Import the Selligent library](#import-the-selligent-library)
+      - [minSdkVersion](#minsdkversion)
+  - [Other libraries](#other-libraries)
+  - [How to use the SDK](#how-to-use-the-sdk)
+    - [Starting the SDK](#starting-the-sdk)
+      - [Extending Application](#extending-application)
+      - [Start](#start)
+      - [Optional settings](#optional-settings)
+    - [Device id](#device-id)
+    - [Push notifications](#push-notifications)
+      - [Permissions for Push notifications](#permissions-for-push-notifications)
+      - [Listening to the push notifications and displaying the linked In-App message or executing the main action](#listening-to-the-push-notifications-and-displaying-the-linked-in-app-message-or-executing-the-main-action)
+      - [Extending SMBaseActivity](#extending-smbaseactivity)
+      - [Customization](#customization)
+      - [Setting a specific icon](#setting-a-specific-icon)
+      - [Setting a specific Activity](#setting-a-specific-activity)
+      - [Design customization](#design-customization)
+      - [Dialog](#dialog)
+      - [Activities](#activities)
+      - [Retrieving the Firebase Cloud Messaging (FCM) token from the SDK](#retrieving-the-firebase-cloud-messaging-fcm-token-from-the-sdk)
+      - [Broadcast -- deprecated](#broadcast-deprecated)
+      - [Observer](#observer)
+      - [SMManager.getInstance().getGCMToken](#smmanager.getinstance.getgcmtoken)
+      - [Enabling/disabling the notifications](#enablingdisabling-the-notifications)
+      - [Setup for special push](#setup-for-special-push)
+      - [Map](#map)
+      - [Event](#event)
+      - [Broadcasts -- deprecated](#broadcasts-deprecated)
+      - [Observers](#observers)
+      - [Manual display of a push notification](#manual-display-of-a-push-notification)
+      - [Manual management of the push](#manual-management-of-the-push)
+    - [In-App messages](#in-app-messages)
+      - [Permissions](#permissions)
+      - [Enabling/disabling the In App-messages](#enablingdisabling-the-in-app-messages)
+      - [Reception of the messages](#reception-of-the-messages)
+      - [Display of an In-App message](#display-of-an-in-app-message)
+      - [Broadcasts -- deprecated](#broadcasts-deprecated)
+      - [Observers](#observers)
+    - [Events](#events)
+      - [Registration/Unregistration](#registrationunregistration)
+      - [SMEventUserRegister](#smeventuserregister)
+      - [SMEventUserUnregister](#smeventuserunregister)
+      - [Login/Logout](#loginlogout)
+      - [SMEventUserLogin](#smeventuserlogin)
+      - [SMEventUserLogout](#smeventuserlogout)
+      - [Custom](#custom)
+      - [SMEvent](#smevent)
+    - [Broadcasts -- deprecated](#broadcasts-deprecated)
+      - [Generic broadcasts](#generic-broadcasts)
+      - [Local broadcasts](#local-broadcasts)
+    - [Observers](#observers)
+    - [Translations](#translations)
+  - [Proguard](#proguard)
+  - [Use cases](#use-cases)
+    - [App with one activity](#app-with-one-activity)
+    - [App with many activities](#app-with-many-activities)
+    - [App with many activities and a Splash screen](#app-with-many-activities-and-a-splash-screen)
+  - [Troubleshooting/FAQ](#troubleshootingfaq)
+<!--/TOC-->
 
-<a name="intro"></a>
 ## Intro
 The purpose of this document is to detail how to install the SDK into your App and how to easily start using it.
-* For more detailed technical reference of the SDK please refer to <a href="Android - MobileSDK Reference.pdf">**Android - MobileSDK Reference**</a>.
+* For more detailed technical reference of the SDK please refer to <a href="MobileSDK%20Reference/sdk/com.selligent.sdk/index.md" target="_blank">Reference manual</a><a href="Android - MobileSDK Reference.pdf">**Android - MobileSDK Reference**</a>.
 * For an example of implementation check the <a href="AndroidSDKTemplate.zip">**AndroidSDKTemplate**</a> project.
 
-<a name="creating_app"></a>
 ## Creating an Application
 
-<a name="creating_app_google"></a>
 ### Google
 - If you already use push notifications (either yourself or through a third party library), simply re-use the Server Key and Sender ID you already have. If you don't already use it, we suggest you switch to integrating the json file given by the Firebase console.
 - If you don't have any yet, go to https://console.firebase.google.com/ and sign in with a Google account.
@@ -133,14 +130,11 @@ The purpose of this document is to detail how to install the SDK into your App a
 - Note the Server key, you will have to give it to the Selligent platform.
 
 
-<a name="including_sdk"></a>
 ## Including the SDK in your project
 
-<a name="sdk_library"></a>
 ### SDK library
 To use our SDK, you can either add a dependency or create a new module containing the aar file.
 
-<a name="add_dependency"></a>
 ### Add the dependency
 
 Since 3.8.3, our SDK is available on Maven Central.
@@ -148,12 +142,11 @@ Since 3.8.3, our SDK is available on Maven Central.
 In the build.gradle file in your app module, add the following line:
 
 ```xml
-implementation 'com.selligent.sdk:selligent_mobile_sdk:4.2.0'
+implementation 'com.selligent.sdk:selligent_mobile_sdk:4.2.1'
 ```
 
 You need to have MavenCentral in your list of repositories.
 
-<a name="import_library"></a>
 #### Import the Selligent library
 If you prefer to directly add the aar file, create a new module that will contain it. 
 
@@ -165,13 +158,11 @@ If you prefer to directly add the aar file, create a new module that will contai
 
 And select the file. Once it is done, synchronize and build the project.
 
-<a name="minSdkVersion"></a>
 #### minSdkVersion
 Due to changes in Firebase and Google-Play-Services and to support Huawei Services, the `minSdkVersion` is now `19`.
 
 > The SDK was built using the Gradle Plugin 7.4.2
 
-<a name="other_lib"></a>
 ## Other libraries
 You need to add some external dependencies in your app gradle file:
 - Firebase messaging and Firebase-core 
@@ -230,13 +221,10 @@ androidx.concurrent:concurrent-futures:1.1.0
 > <br>They replace FirebaseJobDispatcher which is deprecated and not used anymore by the Selligent SDK.
 
 
-<a name="use_sdk"></a>
 ## How to use the SDK
 
-<a name="start_sdk"></a>
 ### Starting the SDK
 
-<a name="extending_app"></a>
 #### Extending Application
 The SDK needs to be started in a class extending Application. 
 If you do not already have one, create a new class, for example `MyApplication` that will extend `Application`:
@@ -260,7 +248,6 @@ In the AndroidManifest.xml file, add the following:
   …       
 ```
                                                                                                                    
-<a name="start"></a>
 #### Start
 To start the SDK, in your class extending `Application` , use the following: 
 ```java
@@ -287,7 +274,6 @@ settings.PrivateKey = "SomePrivateKey";
 SMManager.getInstance().start(settings, this);
 ```
 
-<a name="optional_settings"></a>
 #### Optional settings
 There are optional settings on `SMSettings`:
 
@@ -333,7 +319,6 @@ There are also some optional settings on `SMManager`:
 | `DEBUG` | Setting this to `true` will add the SDK logs to the logcat (it is better to do that before calling the start method to see everything logged when the SDK starts). |
 | `MAIN_ACTIVITY` | Setting this will allow the SDK to know which activity is your main one so that it performs certain operations only when that one is active. For example, a dialog might need to be displayed to the user to update Google-Services or a security protocol on old devices. By specifying the MainActivity, the SDK will only show them on your main Activity and not on a splash or login screen. If it is not specified, the first activity being active will be used. |
 
-<a name="device_id"></a>
 ### Device id
 The device id is given by the Selligent Mobile Platform. 
 There are two ways for you to retrieve it, should you need it:
@@ -346,7 +331,6 @@ SMManager.getInstance().getDevideId()
 SMManager.getInstance().getObserverManager().observeDeviceId()
 ```
 
-<a name="push_notifications"></a>
 ### Push notifications
 Push notifications are messages sent from the server to a device. 
 
@@ -355,7 +339,7 @@ When you click on it, the app opens and the message is displayed.
 If the app is in foreground, it will either directly show the message, create a notification, or do nothing, depending on the value of the 
 setting `RemoteMessageDisplayType` given to the `SMSettings` object when calling the `start” method of `SMManager`. 
 
-> Starting with version 3.7, you can also decide to [manage everything yourself](#push_manual_display) by using our method to retrieve the payload from the Intent 
+> Starting with version 3.7, you can also decide to [manage everything yourself](#manual-display-of-a-push-notification) by using our method to retrieve the payload from the Intent 
 and then do whatever you want with it. 
 
 > Also starting with version 3.7, the SDK will now check if the notifications were enabled/disabled in the settings of the OS for the current app and 
@@ -367,7 +351,6 @@ inform the Selligent Mobile Platform if needed.
   ![](images/Picture7.png)
 </details>
 
-<a name="push_notifications_permissions"></a>
 #### Permissions for Push notifications
 Since Android 13 (API 33), the user must be asked the permission before displaying a notification. For apps targeting API 32 or lower running on Android 13, the OS will do it automatically. For apps targeting API 33 or higher, it must be done manually. As the best moment to do that to maximize the chances of the user agreeing depends on the workflow of the app, the SDK cannot do it automatically. Therefore, we introduced some helper functions (you can also directly call the Android API if you prefer):
 ```java
@@ -422,7 +405,6 @@ or
 > If your app targets Android 12 (targetSdkVersion 31) and you requests `ACCESS_FINE_LOCATION`, you must also request `ACCESS_COARSE_LOCATION`. 
 > <br>In the other cases, only one is needed. Coarse location is less precise than fine location. Note that if you do not add any, the map will still be displayed, just not the user's location.
 
-<a name="listening_push"></a>
 #### Listening to the push notifications and displaying the linked In-App message or executing the main action
 To check if a notification was received and to display it, you must add some code inside your activities (or, better, in any base Activity class you have). 
 
@@ -481,7 +463,6 @@ SMManager.getInstance().checkAndDisplayMessage(getIntent(), this, new SMInAppMes
 
 > Returning false is **not the same** as not calling `checkAndDisplayMessage`. The method also sends events to the Selligent Mobile platform and executes the action behind the push or its buttons (if any).
 
-<a name="extending_smbaseactivity"></a>
 #### Extending SMBaseActivity
 There is a class `SMBaseActivity` in the SDK that already does everything described in the previous point and displays the push notifications. 
 You can make your activities extend it to avoid writing the code described in those points. 
@@ -494,12 +475,10 @@ public class MainActivity extends SMBaseActivity { }
 
 > If you extend `SMBaseActivity`, nothing else needs to be done.
 
-<a name="customization"></a>
 #### Customization
 If the app is in background when a push is received, an icon will appear in the status bar and a notification will be added to the Notification drawer. 
 Clicking on it will call a specific Activity which will display the message. Both can be customized.
 
-<a name="setting_icon"></a>
 #### Setting a specific icon
 To customize that icon, call these methods after starting the SDK in your Application class:
 ```java
@@ -513,7 +492,6 @@ SMManager.getInstance().setNotificationLargeIcon(R.drawable.some_large_icon);
 SMManager.getInstance().setNotificationIconColor(someIntColor);
 ```     
 
-<a name="setting_activity"></a>
 #### Setting a specific Activity
 By default, the Activity called to display the message of a push is `NotificationActivity`. 
 If you want to keep it, to be able to go back to your application from it, it must be declared in the manifest as a child of an activity from your app (in the example, `MainActivity`).
@@ -538,10 +516,8 @@ SMManager.NOTIFICATION_ACTIVITY = MyActivity.class;
 
 If you used `SMRemoteMessageDisplayType.Notification` as value for `RemoteMessageDisplayType`, you can also set this property in your base activity with the value returned by `getClass()`, that way the current activity will be the one called when clicking on the notification when the application is in foreground.
 
-<a name="design_custom"></a>
 #### Design customization
   
-<a name="design_custom_dialog"></a>
 #### Dialog
 <details>
   <summary>Some push messages are displayed as a dialog box which, by default, looks like this.</summary><br/>
@@ -686,7 +662,6 @@ Example:
   ![](images/Picture10.png)
 </details>
 
-<a name="design_custom_activities"></a>
 #### Activities
 Some other type of messages (like Map, HTML, etc.) are displayed in their own activity, not in a dialog. 
 Those activities extend `AppCompatActivity` and, therefore, need an `AppCompat theme`. 
@@ -711,13 +686,11 @@ If you already use an AppCompat theme, then simply use it as parent:
 <style name="Theme.SMTheme" parent="YourTheme"></style>
 ```
 
-<a name="fcm_token"></a>
 #### Retrieving the Firebase Cloud Messaging (FCM) token from the SDK
 There are two ways to retrieve the FCM token: listening to a broadcast and calling a method.
 
 > You will see `GCM` instead of `FCM` in the broadcast and method names, that is because `GCM` stands for `Google Cloud Messaging`, which was the previous name of `FCM`, before Google moved the functionality to Firebase.
 
-<a name="fcm_broadcast"></a>
 #### Broadcast -- deprecated
 > Due to `LocalBroadcastManager` being deprecated with `AndroidX`, this broadcast, although still sent, is now also deprecated. Use the observer instead.
 
@@ -743,7 +716,6 @@ public class EventReceiver extends BroadcastReceiver {
 }
 ```
 
-<a name="fcm_observer"></a>
 #### Observer
 Starting with version 3.0.0, the SDK proposes to use observers instead of listening to the (deprecated) broadcasts. To receive the token, you can do it like this:
 
@@ -764,15 +736,13 @@ By default, the `onChanged` event of the observer is triggered when a new token 
 If a new token was received before the observer is created, the event will not be triggered. 
 If you want to change this behaviour, use the overload that requires a Boolean as third parameter and set it to `true` (default value is `false`). 
 
-[More information](#general_observers).
+[More information](#observers).
 
-<a name="fcm_helper"></a>
 #### SMManager.getInstance().getGCMToken
 This method will return the token stored by the SDK. 
 
 Note that, as the processing to fetch the token from FCM is asynchronous, it is possible that the value returned is either empty or not up-to-date when the call is made.
 
-<a name="push_helpers"></a>
 #### Enabling/disabling the notifications
 
 ```java
@@ -783,9 +753,8 @@ SMManager.getInstance().disableNotifications();
 SMManager.getInstance().enableNotifications();
 ```
 
-<a name="special_push"></a>
 #### Setup for special push
-<a name="special_push_map"></a>
+
 #### Map
 If you expect to receive `Map` type notifications, you will need to specify a Google Map key in your manifest. 
 This key needs to be generated with the google developer console. 
@@ -800,7 +769,6 @@ At the end of this procedure you need to add this generated key under the `APPLI
    android:value="xxxxxxxxxxxxxxx"/>
 ```
 
-<a name="special_push_event"></a>
 #### Event
 When displayed, a notification, an In-App message can contain buttons. 
 One type of button can send a specific value through the app, for you to execute some code when you receive it.
@@ -863,7 +831,6 @@ SMManager.getInstance().getObserverManager().observeEvent(this, customEventObser
 
 > `this` can be used if that code is in an Activity, as the `AndroidX` activities implement `LifecycleOwner`.
 
-<a name="push_broadcasts"></a>
 #### Broadcasts -- deprecated
 > Due to `LocalBroadcastManager` being deprecated with `AndroidX`, all broadcasts, although still sent, are now also deprecated. Use the observers instead.
 
@@ -875,7 +842,6 @@ Some specific broadcasts are sent during the management of the push notification
 - `BROADCAST_EVENT_WILL_DISMISS_NOTIFICATION` : When a message is about to be dismissed 
 - `BROADCAST_EVENT_RECEIVED_GCM_TOKEN` : When the token is received, it contains the token
 
-<a name="push_observers"></a>
 #### Observers
 By default, the `onChanged` event of the observer is triggered when there is a new value after the observer is created. 
 If there is a new value before the observer is created, the event will not be triggered. 
@@ -906,7 +872,6 @@ If you want to change this behaviour, use the overload that requires a Boolean a
   SMManager.getInstance().getObserverManager().observePushReceived(@NonNull LifecycleOwner lifecycleOwner, @NonNull Observer<SMNotificationMessage> observer)
   ```
 
-<a name="push_manual_display"></a>
 #### Manual display of a push notification
 If you set `RemoteMessageDisplayType` to `None` and listen to the broadcast `BROADCAST_EVENT_RECEIVED_REMOTE_NOTIFICATION`, you will want to use the following methods: 
 
@@ -925,7 +890,6 @@ SMManager.getInstance().retrieveLastReceivedNotificationContent();
 SMManager.getInstance().displayLastReceivedNotification()
 ```
 
-<a name="push_manual_management"></a>
 #### Manual management of the push
 If you do not want the SDK to manage the push notifications, follow these steps:
 - Tell the sdk to not listen to the push by setting `DoNotListenToThePush` to `true` on `SMSettings`
@@ -954,19 +918,16 @@ If you do not want the SDK to manage the push notifications, follow these steps:
   SMManager.getInstance().setButtonAsClicked(smNotificationMessage, smNotificationMessage.getNotificationButtons()[0]);
   ```
   
-<a name="iam"></a>
 ### In-App messages
 In-App messages are messages retrieved periodically by the SDK. 
 
 They are retrieved when the app becomes active (ie. at start, when going from background to foreground and when the orientation changes) ONLY if the last refresh is older than the value set for `InAppMessageRefreshType`.
 
-<a name="iam_permissions"></a>
 #### Permissions
 There is no mandatory permission required to use the In-App messages in general. However, like for push notifications, some In-App messages will require special permissions to be displayed properly.
 
-[More information](#push_notifications_permissions)
+[More information](#permissions-for-push-notifications)
 
-<a name="iam_helpers"></a>
 #### Enabling/disabling the In App-messages
 In app messages are disabled by default unless you set `InAppMessageRefreshType` on `SMSettings`. 
 
@@ -982,7 +943,6 @@ SMManager.getInstance().enableInAppMessages(SMInAppRefreshType.Daily);
 
 Those two methods can be called anywhere in your app.
 
-<a name="iam_reception"></a>
 #### Reception of the messages
 The SDK retrieved the In-App messages automatically, according to the setting `InAppMessageRefreshType` set when starting the SDK.
 
@@ -990,7 +950,7 @@ The SDK retrieved the In-App messages automatically, according to the setting `I
 
 When messages are received, a broadcast is sent: `BROADCAST_EVENT_RECEIVED_IN_APP_MESSAGE`. Use `SMManager.BROADCAST_DATA_IN_APP_MESSAGES` to retrieve them from the intent.
 
-[More information](#broadcasts_local)
+[More information](#local-broadcasts)
 
 To observe the In-App messages, call the following method:
 ```java
@@ -1004,7 +964,7 @@ The received list contains all the In-App messages that have not been read by th
 By default, the `onChanged` event of the observer is triggered when new In-App messages are received after the observer is created. 
 If they are erceived before the observer is created, the event will not be triggered. 
 If you want to change this behaviour, use the overload that requires a Boolean as third parameter and set it to `true` (default value is `false`).
-[More information](#general_observers)
+[More information](#observers)
 
 Since version 3.4.0 there is a new method to retrieve the In-App messages: 
 ```java
@@ -1014,7 +974,6 @@ SMManager.getInstance().getInAppMessages(final SMInAppMessageReturn callbackEven
 
 > The messages retrieved using this method are the exact content of the In-App message cache. If you started the SDK with the value None for `SMSettings.ClearCacheIntervalValue`, it means there is no cache for the In-App messages and, therefore, this will return an empty array. In that case, you must rely only on the observer to retrieve the In-App messages.
 
-<a name="iam_display"></a>
 #### Display of an In-App message
 Once you have the In-App messages, you can display one using the following method:
 ```java
@@ -1047,7 +1006,6 @@ SMManager.getInstance().deleteInAppMessage(String messageId)
 SMManager.getInstance().deleteInAppMessages(String[] messageIds)
 ```
 
-<a name="iam_broadcasts"></a>
 #### Broadcasts -- deprecated
 > Due to `LocalBroadcastManager` being deprecated with `AndroidX`, all broadcasts, although still sent, are now also deprecated. Use the observers instead.
 
@@ -1057,14 +1015,13 @@ Some specific broadcasts are sent during the management of the In-App messages (
 - `BROADCAST_EVENT_WILL_DISPLAY_NOTIFICATION`: When a message is about to be displayed 
 - `BROADCAST_EVENT_WILL_DISMISS_NOTIFICATION`: When a message is about to be dismissed
 
-[More information](#general_broadcasts)
+[More information](#broadcasts-deprecated)
 
-<a name="iam_observers"></a>
 #### Observers
 By default, the `onChanged` event of the observer is triggered when there is a new value after the observer is created. 
 If there is a new value before the observer is created, the event will not be triggered. 
 If you want to change this behaviour, use the overload that requires a Boolean as third parameter and set it to `true` (default value is `false`). 
-[More information](#general_observers)
+[More information](#observers)
  
 - `Received In-App messages`: When the SDK fetches the In-App messages, it sends an array of the Ids and labels to the app
   ```java
@@ -1083,7 +1040,6 @@ If you want to change this behaviour, use the overload that requires a Boolean a
   SMManager.getInstance().getObserverManager().observeDismissedMessage(@NonNull LifecycleOwner lifecycleOwner, @NonNull Observer<Void> observer)
   ```
  
-<a name="events"></a>
 ### Events
 The following method can be used to send specific messages to the web service. 
 ```java
@@ -1094,9 +1050,8 @@ All the different classes extend `SMEvent`. They are described in the following 
 
 > Since 1.3, the data passed to the SMEvent is `Hashtable<String, String>` (in earlier versions it was `Hashtable<String, Object>`).
 
-<a name="events_registerunregister"></a>
 #### Registration/Unregistration
-<a name="events_register"></a>
+
 #### SMEventUserRegister
 This object is used to send a `register` event to the server with the e-mail of the user, potential data and a callback, with the purpose of linking the device to an user.
 
@@ -1125,7 +1080,6 @@ SMManager.getInstance().sendSMEvent(event);
 
 > Since 3.2.0, an overload constructor exists without the email.
 
-<a name="events_unregister"></a>
 #### SMEventUserUnregister
 This object is used to send an `unregister` event to the server with the e-mail of the user, potential data and a callback.
 
@@ -1154,9 +1108,8 @@ SMManager.getInstance().sendSMEvent(event);
 
 > Since 3.2.0, an overload constructor exists without the email
 
-<a name="events_loginglogout"></a>
 #### Login/Logout
-<a name="events_login"></a>
+
 #### SMEventUserLogin
 This object is used to send a `login` event to the server with the e-mail of the user, potential data and a callback, with the purpose of linking the device to an user.
 
@@ -1185,7 +1138,6 @@ SMManager.getInstance().sendSMEvent(event);
 
 > Since 3.2.0, an overload constructor exists without the email
 
-<a name="events_logout"></a>
 #### SMEventUserLogout
 This object is used to send a `logout”` event to the server with the e-mail of the user, potential data and a callback.
 
@@ -1214,9 +1166,8 @@ SMManager.getInstance().sendSMEvent(event);
 
 > Since 3.2.0, an overload constructor exists without the email
 
-<a name="events_custom"></a>
 #### Custom
-<a name="events_event"></a>
+
 #### SMEvent
 This object is used to send a custom event to the server with some data and a callback.
 
@@ -1241,13 +1192,11 @@ SMEvent event = new SMEvent("someEventName", hash, new SMCallback() {
 SMManager.getInstance().sendSMEvent(event);
 ```
 
-<a name="general_broadcasts"></a>
 ### Broadcasts -- deprecated
 A certain number of broadcasts are sent from the SDK at different moments. You can listen to them to be able to execute some code related to those events. 
 
 Refer to the [template project](AndroidSDKTemplate.zip) for examples of what to do with the data sent with those broadcasts
 
-<a name="broadcasts_generic"></a>
 #### Generic broadcasts
 > Due to limitations to what can be done in background starting with Android O, this broadcast is now deprecated with SDK 1.6.0. 
 > It is still sent but you won’t be able to listen to it if your app targets android O (targetSdk=26) and runs on an Android O device. <br>
@@ -1300,7 +1249,6 @@ protected void onStart() {
 }
 ```
 
-<a name="broadcasts_local"></a>
 #### Local broadcasts
 > Due to `LocalBroadcastManager` being deprecated with `AndroidX`, all the local broadcasts, although still sent, are now also deprecated starting at SDK 3.0.0. Use the observers instead.
 
@@ -1362,7 +1310,6 @@ protected void onStart() {
 }
 ```
 
-<a name="general_observers"></a>
 ### Observers
 Starting with version 3.0.0, the observers are the new way to listen to SDK events. 
 
@@ -1427,7 +1374,6 @@ final Observer<HashMap<String, Integer>> inAppMessageObserver = new Observer<SMI
 SMManager.getInstance().getObserverManager().observeInAppMessages(this, inAppMessageObserver);
 ```
   
-<a name="translations"></a>
 ### Translations
 When asking for a permission, a text is displayed explaining why we need it. By default, it is in `English` but a translation for a few languages is provided: `Dutch`, `Spanish`, `French` and `German`. If you want to add another language (or change the message), add under `res` a folder named `value-[language code]` (example: to add `Russian`, you would name it `value-ru`), create a `strings.xml` file and, under a <resources> tag, add:
   
@@ -1437,7 +1383,6 @@ When asking for a permission, a text is displayed explaining why we need it. By 
 <string name="sm_permissions_not_enough">Write here the message you want</string>
 ```
   
-<a name="proguard"></a>
 ## Proguard
 If you are using Proguard to minify the code of your app, add the following lines to the file `proguard-rules.pro`: 
 ```proguard
@@ -1454,14 +1399,13 @@ If you ever encounter a problem displaying the push when the app is minimised, i
 -keep class org.json.** { *; }
 ```
 
-<a name="usecases"></a>
 ## Use cases
-<a name="usecases_apponeactivity"></a>
+
 ### App with one activity
 This is the simplest case. Start the SDK in your `Application` and set `NOTIFICATION_ACTIVITY` to your only activity. 
 In that Activity, call the method `checkAndDisplayMessage` on the `onStart` and `onNewIntent` events, register our `SMForegroundBroadcastReceiver` on the `onStart` and unregister on the `onStop`.
   
-<a name="usecases_appmanyctivities"></a>
+
 ### App with many activities
 > We want the In-App message linked to the push to be displayed anywhere
   
@@ -1476,7 +1420,6 @@ If you do that in a base activity, then set it like this:
 SMManager.NOTIFICATION_ACTIVITY = this.getClass();
 ```
   
-<a name="usecases_appmanyctivities_splash"></a>
 ### App with many activities and a Splash screen
 > We want the In-App message linked to the push to be displayed anywhere, except in the splash screen
 
@@ -1512,7 +1455,6 @@ It will allow a push received while on the splashscreen to be transferred to the
   
 > This is not necessary with the new splash screen introduced in Android 12, simply set `NOTIFICATION_ACTIVITY` to your main activity.
   
-<a name="troubleshooting_faq"></a>
 ## Troubleshooting/FAQ
 - **Q: When I look at the devices in Campaign/Selligent Marketing Cloud, why don’t they have a token?**
   - A: If there is no token, that means the SDK did not send it. There are a few reasons why this could happen:

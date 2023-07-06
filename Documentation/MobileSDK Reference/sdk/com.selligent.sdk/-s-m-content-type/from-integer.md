@@ -3,4 +3,4 @@
 # fromInteger
 
 [androidJvm]\
-open fun [fromInteger](from-integer.md)(x: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)
+open fun [fromInteger](from-integer.md)(x: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [SMContentType](index.md)
