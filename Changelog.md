@@ -1,5 +1,10 @@
 # SDK Changelog
 
+- Version 4.3.0
+	- Increased minSdkVersion to 21 (Android 5.0)
+	- Fixed a bug where some dependencies were falsely detected as missing when the app is minified, 
+	  preventing some functionality to work correctly.
+
 - Version 4.2.1
 	- Fixed a bug causing an exception when redisplaying a rich push notification
 	- Fixed a bug causing an empty notification to appear when redisplaying a notification although none had been received yet.

@@ -142,7 +142,7 @@ Since 3.8.3, our SDK is available on Maven Central.
 In the build.gradle file in your app module, add the following line:
 
 ```xml
-implementation 'com.selligent.sdk:selligent_mobile_sdk:4.2.1'
+implementation 'com.selligent.sdk:selligent_mobile_sdk:4.3.0'
 ```
 
 You need to have MavenCentral in your list of repositories.
@@ -159,7 +159,7 @@ If you prefer to directly add the aar file, create a new module that will contai
 And select the file. Once it is done, synchronize and build the project.
 
 #### minSdkVersion
-Due to changes in Firebase and Google-Play-Services and to support Huawei Services, the `minSdkVersion` is now `19`.
+The `minSdkVersion` is `21`.
 
 > The SDK was built using the Gradle Plugin 7.4.2
 
