@@ -7,7 +7,7 @@ abstract fun [onSuccess](on-success.md)(@[NonNull](https://developer.android.com
 
 Event triggered when the SMNotificationMessage is retrieved.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

@@ -7,7 +7,7 @@ open fun [setInAppMessageAsUnseen](set-in-app-message-as-unseen.md)(inAppMessage
 
 Set the given [SMInAppMessage](../-s-m-in-app-message/index.md) as unseen. Use this method if you want to display the In-App messages yourself.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

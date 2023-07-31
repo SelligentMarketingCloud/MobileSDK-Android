@@ -3,4 +3,4 @@
 # SMInAppContentHtmlFragment
 
 [androidJvm]\
-open fun [SMInAppContentHtmlFragment](-s-m-in-app-content-html-fragment.md)()
+constructor()

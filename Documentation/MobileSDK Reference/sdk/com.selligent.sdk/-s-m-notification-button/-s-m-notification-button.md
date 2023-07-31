@@ -3,4 +3,4 @@
 # SMNotificationButton
 
 [androidJvm]\
-open fun [SMNotificationButton](-s-m-notification-button.md)()
+constructor()

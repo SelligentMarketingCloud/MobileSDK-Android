@@ -7,7 +7,7 @@ abstract fun [onError](on-error.md)(httpResponseCode: [Int](https://kotlinlang.o
 
 Event triggered when an error occured while sending the SMEvent
 
-## Parameters
+#### Parameters
 
 androidJvm
 

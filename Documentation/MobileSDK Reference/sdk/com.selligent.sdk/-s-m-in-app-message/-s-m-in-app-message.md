@@ -3,6 +3,6 @@
 # SMInAppMessage
 
 [androidJvm]\
-open fun [SMInAppMessage](-s-m-in-app-message.md)()
+constructor()
 
-open fun [SMInAppMessage](-s-m-in-app-message.md)(json: [String](https://developer.android.com/reference/kotlin/java/lang/String.html))
+constructor(json: [String](https://developer.android.com/reference/kotlin/java/lang/String.html))

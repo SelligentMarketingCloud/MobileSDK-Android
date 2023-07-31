@@ -10,7 +10,7 @@ open fun [observeEvent](observe-event.md)(@[NonNull](https://developer.android.c
 
 Use this method to get notified when a specific event is triggered from a button in a notification, In-App message or In-app content or from the main action of a notification. It replaces the broadcast of a specific value. It must be called on the main thread. Observing using this method will trigger the onChanged event of the observer only when the value changes after the observer is created. If there is already a value at that moment, the event will not get triggered. To change that behaviour, use the overload [observeEvent](observe-event.md)
 
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -27,7 +27,7 @@ open fun [observeEvent](observe-event.md)(@[NonNull](https://developer.android.c
 
 Use this method to get notified when a specific event is triggered from a button in a notification, In-App message or In-app content or from the main action of a notification. It replaces the broadcast of a specific value. It must be called on the main thread.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

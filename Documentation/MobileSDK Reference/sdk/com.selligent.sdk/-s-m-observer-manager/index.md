@@ -7,6 +7,12 @@ open class [SMObserverManager](index.md)
 
 This class is used to observe some events of the SDK. The triggers are executed once when the event happens. If several observers are listening, each one will be triggered once. Do not create a new instance of this class, instead, use getObserverManager
 
+## Constructors
+
+| | |
+|---|---|
+| [SMObserverManager](-s-m-observer-manager.md) | [androidJvm]<br>constructor() |
+
 ## Functions
 
 | Name | Summary |

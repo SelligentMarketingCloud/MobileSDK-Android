@@ -7,7 +7,7 @@ open fun [requestPostNotificationPermission](request-post-notification-permissio
 
 This method will display the dialog asking the user for the notification permission. It should be called at an appropriate time in the app workflow. The dialog will only be called when running on Android 13 (API 33) and higher. Nothing will happen for older versions (as the permission did not exist).
 
-## Parameters
+#### Parameters
 
 androidJvm
 

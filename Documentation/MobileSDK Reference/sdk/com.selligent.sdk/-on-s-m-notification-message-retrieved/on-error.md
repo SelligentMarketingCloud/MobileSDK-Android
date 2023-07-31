@@ -7,7 +7,7 @@ abstract fun [onError](on-error.md)(exception: [Exception](https://developer.and
 
 Event triggered when an error occurred while retrieving the SMNotificationMessage
 
-## Parameters
+#### Parameters
 
 androidJvm
 

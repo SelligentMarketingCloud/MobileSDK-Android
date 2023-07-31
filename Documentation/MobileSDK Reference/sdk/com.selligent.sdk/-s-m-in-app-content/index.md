@@ -11,14 +11,23 @@ An In App content
 
 | | |
 |---|---|
-| [SMInAppContent](-s-m-in-app-content.md) | [androidJvm]<br>open fun [SMInAppContent](-s-m-in-app-content.md)()<br>Empty constructor of an In App Content |
-| [SMInAppContent](-s-m-in-app-content.md) | [androidJvm]<br>open fun [SMInAppContent](-s-m-in-app-content.md)(jSon: [String](https://developer.android.com/reference/kotlin/java/lang/String.html))<br>Constructor that fills in the In App Content based on the given json |
+| [SMInAppContent](-s-m-in-app-content.md) | [androidJvm]<br>constructor()<br>Empty constructor of an In App Content<br>constructor(jSon: [String](https://developer.android.com/reference/kotlin/java/lang/String.html))<br>Constructor that fills in the In App Content based on the given json |
 
 ## Types
 
 | Name | Summary |
 |---|---|
 | [DisplayMode](-display-mode/index.md) | [androidJvm]<br>enum [DisplayMode](-display-mode/index.md)<br>Enum listing the different display mode. |
+
+## Properties
+
+| Name | Summary |
+|---|---|
+| [category](category.md) | [androidJvm]<br>open val [category](category.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
+| [displayMode](display-mode.md) | [androidJvm]<br>open val [displayMode](display-mode.md): [SMInAppContent.DisplayMode](-display-mode/index.md) |
+| [image](image.md) | [androidJvm]<br>@get:[Nullable](https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html)<br>open val [image](image.md): [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html) |
+| [links](links.md) | [androidJvm]<br>open val [links](links.md): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)&lt;[SMLink](../-s-m-link/index.md)&gt; |
+| [type](type.md) | [androidJvm]<br>open val [type](type.md): [SMContentType](../-s-m-content-type/index.md) |
 
 ## Functions
 
@@ -35,13 +44,3 @@ An In App content
 | [hashCode](hash-code.md) | [androidJvm]<br>open fun [hashCode](hash-code.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)<br>Returns an integer hash code for this object. |
 | [readExternal](read-external.md) | [androidJvm]<br>open fun [readExternal](read-external.md)(serializedObject: [ObjectInput](https://developer.android.com/reference/kotlin/java/io/ObjectInput.html))<br>This method is called when deserializing the object. |
 | [writeExternal](write-external.md) | [androidJvm]<br>open fun [writeExternal](write-external.md)(serializedObject: [ObjectOutput](https://developer.android.com/reference/kotlin/java/io/ObjectOutput.html))<br>This method is called when serializing the object. |
-
-## Properties
-
-| Name | Summary |
-|---|---|
-| [category](category.md) | [androidJvm]<br>open val [category](category.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
-| [displayMode](display-mode.md) | [androidJvm]<br>open val [displayMode](display-mode.md): [SMInAppContent.DisplayMode](-display-mode/index.md) |
-| [image](image.md) | [androidJvm]<br>@get:[Nullable](https://developer.android.com/reference/kotlin/androidx/annotation/Nullable.html)<br>open val [image](image.md): [Bitmap](https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html) |
-| [links](links.md) | [androidJvm]<br>open val [links](links.md): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)&lt;[SMLink](../-s-m-link/index.md)&gt; |
-| [type](type.md) | [androidJvm]<br>open val [type](type.md): [SMContentType](../-s-m-content-type/index.md) |

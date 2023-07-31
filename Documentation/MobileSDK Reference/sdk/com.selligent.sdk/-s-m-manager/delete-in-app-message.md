@@ -7,7 +7,7 @@ open fun [deleteInAppMessage](delete-in-app-message.md)(messageId: [String](http
 
 This method deletes one In-App Message.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

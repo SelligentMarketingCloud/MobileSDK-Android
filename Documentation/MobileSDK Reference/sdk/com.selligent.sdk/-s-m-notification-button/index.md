@@ -2,28 +2,21 @@
 
 # SMNotificationButton
 
-[androidJvm]\
 open class [SMNotificationButton](index.md) : [Externalizable](https://developer.android.com/reference/kotlin/java/io/Externalizable.html)
 
 Object containing all the data used to implement a button in a notification/message.
+
+#### Inheritors
+
+| |
+|---|
+| [SMLink](../-s-m-link/index.md) |
 
 ## Constructors
 
 | | |
 |---|---|
-| [SMNotificationButton](-s-m-notification-button.md) | [androidJvm]<br>open fun [SMNotificationButton](-s-m-notification-button.md)() |
-
-## Functions
-
-| Name | Summary |
-|---|---|
-| [getAction](get-action.md) | [androidJvm]<br>@[Deprecated](https://developer.android.com/reference/kotlin/java/lang/Deprecated.html)<br>~~open~~ ~~fun~~ [~~getAction~~](get-action.md)~~(~~~~)~~~~:~~ [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)<br>The action that will be executed when clicking on the button. |
-| [getId](get-id.md) | [androidJvm]<br>open fun [getId](get-id.md)(): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
-| [getLabel](get-label.md) | [androidJvm]<br>open fun [getLabel](get-label.md)(): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
-| [getLinkAction](get-link-action.md) | [androidJvm]<br>open fun [getLinkAction](get-link-action.md)(): [SMLinkAction](../-s-m-link-action/index.md) |
-| [getValue](get-value.md) | [androidJvm]<br>open fun [getValue](get-value.md)(): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
-| [readExternal](read-external.md) | [androidJvm]<br>open fun [readExternal](read-external.md)(serializedObject: [ObjectInput](https://developer.android.com/reference/kotlin/java/io/ObjectInput.html))<br>This method is called when deserializing the object. |
-| [writeExternal](write-external.md) | [androidJvm]<br>open fun [writeExternal](write-external.md)(serializedObject: [ObjectOutput](https://developer.android.com/reference/kotlin/java/io/ObjectOutput.html))<br>This method is called when serializing the object. |
+| [SMNotificationButton](-s-m-notification-button.md) | [androidJvm]<br>constructor() |
 
 ## Properties
 
@@ -36,8 +29,14 @@ Object containing all the data used to implement a button in a notification/mess
 | [type](type.md) | [androidJvm]<br>open var [type](type.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
 | [value](value.md) | [androidJvm]<br>open var [value](value.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
 
-## Inheritors
+## Functions
 
-| Name |
-|---|
-| [SMLink](../-s-m-link/index.md) |
+| Name | Summary |
+|---|---|
+| [getAction](get-action.md) | [androidJvm]<br>open fun [~~getAction~~](get-action.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)<br>The action that will be executed when clicking on the button. |
+| [getId](get-id.md) | [androidJvm]<br>open fun [getId](get-id.md)(): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
+| [getLabel](get-label.md) | [androidJvm]<br>open fun [getLabel](get-label.md)(): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
+| [getLinkAction](get-link-action.md) | [androidJvm]<br>open fun [getLinkAction](get-link-action.md)(): [SMLinkAction](../-s-m-link-action/index.md) |
+| [getValue](get-value.md) | [androidJvm]<br>open fun [getValue](get-value.md)(): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
+| [readExternal](read-external.md) | [androidJvm]<br>open fun [readExternal](read-external.md)(serializedObject: [ObjectInput](https://developer.android.com/reference/kotlin/java/io/ObjectInput.html))<br>This method is called when deserializing the object. |
+| [writeExternal](write-external.md) | [androidJvm]<br>open fun [writeExternal](write-external.md)(serializedObject: [ObjectOutput](https://developer.android.com/reference/kotlin/java/io/ObjectOutput.html))<br>This method is called when serializing the object. |

@@ -7,7 +7,7 @@ abstract fun [onSuccess](on-success.md)(result: [String](https://developer.andro
 
 Event triggered when the SMEvent was sent successfully.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

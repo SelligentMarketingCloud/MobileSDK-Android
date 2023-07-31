@@ -3,22 +3,14 @@
 # SMEventUserLogin
 
 [androidJvm]\
-open fun [SMEventUserLogin](-s-m-event-user-login.md)()
+constructor()
 
 [androidJvm]\
-open fun [SMEventUserLogin](-s-m-event-user-login.md)(profileId: [String](https://developer.android.com/reference/kotlin/java/lang/String.html), data: [Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable.html)&lt;[String](https://developer.android.com/reference/kotlin/java/lang/String.html), [String](https://developer.android.com/reference/kotlin/java/lang/String.html)&gt;, callback: [SMCallback](../-s-m-callback/index.md))
+constructor(profileId: [String](https://developer.android.com/reference/kotlin/java/lang/String.html), data: [Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable.html)&lt;[String](https://developer.android.com/reference/kotlin/java/lang/String.html), [String](https://developer.android.com/reference/kotlin/java/lang/String.html)&gt;, callback: [SMCallback](../-s-m-callback/index.md))
 
 Constructs a new SMEventUserLogin
 
-## See also
-
-androidJvm
-
-| | |
-|---|---|
-| [com.selligent.sdk.SMCallback](../-s-m-callback/index.md) |  |
-
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -28,20 +20,18 @@ androidJvm
 | data | a Hashtable<String, String> containing custom data, can be null. |
 | callback | an SMCallback containing code to perform after the message is sent |
 
+#### See also
+
+| |
+|---|
+| [SMCallback](../-s-m-callback/index.md) |
+
 [androidJvm]\
-open fun [SMEventUserLogin](-s-m-event-user-login.md)(data: [Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable.html)&lt;[String](https://developer.android.com/reference/kotlin/java/lang/String.html), [String](https://developer.android.com/reference/kotlin/java/lang/String.html)&gt;, callback: [SMCallback](../-s-m-callback/index.md))
+constructor(data: [Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable.html)&lt;[String](https://developer.android.com/reference/kotlin/java/lang/String.html), [String](https://developer.android.com/reference/kotlin/java/lang/String.html)&gt;, callback: [SMCallback](../-s-m-callback/index.md))
 
 Constructs a new SMEventUserLogin
 
-## See also
-
-androidJvm
-
-| | |
-|---|---|
-| [com.selligent.sdk.SMCallback](../-s-m-callback/index.md) |  |
-
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -49,3 +39,9 @@ androidJvm
 |---|---|
 | data | a Hashtable<String, String> containing custom data, can be null. |
 | callback | an SMCallback containing code to perform after the message is sent |
+
+#### See also
+
+| |
+|---|
+| [SMCallback](../-s-m-callback/index.md) |

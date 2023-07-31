@@ -11,8 +11,14 @@ An In App message
 
 | | |
 |---|---|
-| [SMInAppMessage](-s-m-in-app-message.md) | [androidJvm]<br>open fun [SMInAppMessage](-s-m-in-app-message.md)() |
-| [SMInAppMessage](-s-m-in-app-message.md) | [androidJvm]<br>open fun [SMInAppMessage](-s-m-in-app-message.md)(json: [String](https://developer.android.com/reference/kotlin/java/lang/String.html)) |
+| [SMInAppMessage](-s-m-in-app-message.md) | [androidJvm]<br>constructor()constructor(json: [String](https://developer.android.com/reference/kotlin/java/lang/String.html)) |
+
+## Properties
+
+| Name | Summary |
+|---|---|
+| [id](id.md) | [androidJvm]<br>open var [id](id.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
+| [title](title.md) | [androidJvm]<br>open var [title](title.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
 
 ## Functions
 
@@ -32,10 +38,3 @@ An In App message
 | [hashCode](hash-code.md) | [androidJvm]<br>open fun [hashCode](hash-code.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)<br>Returns an integer hash code for this object. |
 | [readExternal](read-external.md) | [androidJvm]<br>open fun [readExternal](read-external.md)(serializedObject: [ObjectInput](https://developer.android.com/reference/kotlin/java/io/ObjectInput.html))<br>This method is called when deserializing the object. |
 | [writeExternal](write-external.md) | [androidJvm]<br>open fun [writeExternal](write-external.md)(serializedObject: [ObjectOutput](https://developer.android.com/reference/kotlin/java/io/ObjectOutput.html))<br>This method is called when serializing the object. |
-
-## Properties
-
-| Name | Summary |
-|---|---|
-| [id](id.md) | [androidJvm]<br>open var [id](id.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
-| [title](title.md) | [androidJvm]<br>open var [title](title.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |

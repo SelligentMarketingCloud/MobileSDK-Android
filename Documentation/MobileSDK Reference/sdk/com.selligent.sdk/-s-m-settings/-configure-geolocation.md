@@ -3,7 +3,15 @@
 # ConfigureGeolocation
 
 [androidJvm]\
-open var [ConfigureGeolocation](-configure-geolocation.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+open var [~~ConfigureGeolocation~~](-configure-geolocation.md): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+
+---
+
+### Deprecated (for removal)
+
+Since version 3.0.0
+
+---
 
 This will tell the SDK to use the geolocation. Default is false. 
 

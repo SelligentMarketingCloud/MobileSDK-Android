@@ -10,7 +10,7 @@ open fun [observeClickedButton](observe-clicked-button.md)(@[NonNull](https://de
 
 Use this method to get notified when a button of an notification or of an In-App message is clicked or when the main action of a push is executed. It replaces the broadcast BROADCAST_EVENT_BUTTON_CLICKED. It must be called on the main thread. Observing using this method will trigger the onChanged event of the observer only when the value changes after the observer is created. If there is already a value at that moment, the event will not get triggered. To change that behaviour, use the overload [observeClickedButton](observe-clicked-button.md)
 
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -27,7 +27,7 @@ open fun [observeClickedButton](observe-clicked-button.md)(@[NonNull](https://de
 
 Use this method to get notified when a button of an notification or of an In-App message is clicked or when the main action of a push is executed. It replaces the broadcast BROADCAST_EVENT_BUTTON_CLICKED. It must be called on the main thread.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

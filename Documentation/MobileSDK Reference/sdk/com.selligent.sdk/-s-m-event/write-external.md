@@ -7,7 +7,7 @@ open fun [writeExternal](write-external.md)(serializedObject: [ObjectOutput](htt
 
 This method is called when serializing the object. It should not be called manually.
 
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -15,8 +15,8 @@ androidJvm
 |---|---|
 | serializedObject | the [ObjectOutput](https://developer.android.com/reference/kotlin/java/io/ObjectOutput.html) object used to store the values of the SMEvent object |
 
-## Throws
+#### Throws
 
-| | |
-|---|---|
-| [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html) |  |
+| |
+|---|
+| [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html) |

@@ -3,4 +3,4 @@
 # SMInAppContentUrlFragment
 
 [androidJvm]\
-open fun [SMInAppContentUrlFragment](-s-m-in-app-content-url-fragment.md)()
+constructor()

@@ -11,10 +11,8 @@ This returns the resource id set by setNotificationSmallIcon.
 
 the resource id.
 
-## See also
+#### See also
 
-androidJvm
-
-| | |
-|---|---|
-| [com.selligent.sdk.SMManager](set-notification-small-icon.md) |  |
+| |
+|---|
+| [SMManager](set-notification-small-icon.md) |

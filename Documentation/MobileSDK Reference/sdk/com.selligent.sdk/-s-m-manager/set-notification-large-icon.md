@@ -7,7 +7,7 @@ open fun [setNotificationLargeIcon](set-notification-large-icon.md)(iconResource
 
 This allows the SDK to use a specific icon for the notifications. This large icon will be visible in the notification view.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

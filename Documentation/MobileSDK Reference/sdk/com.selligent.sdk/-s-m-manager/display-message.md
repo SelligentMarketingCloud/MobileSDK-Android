@@ -3,7 +3,15 @@
 # displayMessage
 
 [androidJvm]\
-open fun [displayMessage](display-message.md)(messageId: [String](https://developer.android.com/reference/kotlin/java/lang/String.html), activity: [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html))
+open fun [~~displayMessage~~](display-message.md)(messageId: [String](https://developer.android.com/reference/kotlin/java/lang/String.html), activity: [Activity](https://developer.android.com/reference/kotlin/android/app/Activity.html))
+
+---
+
+### Deprecated (for removal)
+
+Since version 4.1.0
+
+---
 
 Display the given message (remote or In App) whose id is given, like if clicking on the notification
 
@@ -11,7 +19,7 @@ Display the given message (remote or In App) whose id is given, like if clicking
 
 since 4.1.0, use [displayInAppMessage](display-in-app-message.md) instead
 
-## Parameters
+#### Parameters
 
 androidJvm
 

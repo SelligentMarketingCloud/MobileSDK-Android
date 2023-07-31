@@ -7,7 +7,7 @@ open fun [setFirebaseToken](set-firebase-token.md)(token: [String](https://devel
 
 This method is to be used only if you set [DoNotFetchTheToken](../-s-m-settings/-do-not-fetch-the-token.md) to true. It will store the token in the SDK cache and send it to the Selligent platform if needed (if the SDK doesn't have it already or if the token changed)
 
-## Parameters
+#### Parameters
 
 androidJvm
 

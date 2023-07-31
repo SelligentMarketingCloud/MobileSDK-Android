@@ -10,7 +10,7 @@ open fun [observeInAppContents](observe-in-app-contents.md)(@[NonNull](https://d
 
 Use this method to get notified when In-App contents are fetched. It replaces the boadcast BROADCAST_EVENT_RECEIVED_IN_APP_CONTENTS. It must be called on the main thread. Observing using this method will trigger the onChanged event of the observer only when the value changes after the observer is created. If there is already a value at that moment, the event will not get triggered. To change that behaviour, use the overload [observeInAppContents](observe-in-app-contents.md)
 
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -27,7 +27,7 @@ open fun [observeInAppContents](observe-in-app-contents.md)(@[NonNull](https://d
 
 Use this method to get notified when In-App contents are fetched. It replaces the boadcast BROADCAST_EVENT_RECEIVED_IN_APP_CONTENTS. It must be called on the main thread.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

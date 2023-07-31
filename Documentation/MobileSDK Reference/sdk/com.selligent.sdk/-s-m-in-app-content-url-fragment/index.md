@@ -11,7 +11,16 @@ This class implements a fragment that will display In App Content containing an 
 
 | | |
 |---|---|
-| [SMInAppContentUrlFragment](-s-m-in-app-content-url-fragment.md) | [androidJvm]<br>open fun [SMInAppContentUrlFragment](-s-m-in-app-content-url-fragment.md)() |
+| [SMInAppContentUrlFragment](-s-m-in-app-content-url-fragment.md) | [androidJvm]<br>constructor() |
+
+## Properties
+
+| Name | Summary |
+|---|---|
+| [STYLE_NO_FRAME](index.md#1722569072%2FProperties%2F462465411) | [androidJvm]<br>val [STYLE_NO_FRAME](index.md#1722569072%2FProperties%2F462465411): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 2 |
+| [STYLE_NO_INPUT](index.md#-973695565%2FProperties%2F462465411) | [androidJvm]<br>val [STYLE_NO_INPUT](index.md#-973695565%2FProperties%2F462465411): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 3 |
+| [STYLE_NO_TITLE](index.md#-1568594203%2FProperties%2F462465411) | [androidJvm]<br>val [STYLE_NO_TITLE](index.md#-1568594203%2FProperties%2F462465411): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 1 |
+| [STYLE_NORMAL](index.md#-285440680%2FProperties%2F462465411) | [androidJvm]<br>val [STYLE_NORMAL](index.md#-285440680%2FProperties%2F462465411): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) = 0 |
 
 ## Functions
 
@@ -157,12 +166,3 @@ This class implements a fragment that will display In App Content containing an 
 | [startPostponedEnterTransition](index.md#-1311853996%2FFunctions%2F462465411) | [androidJvm]<br>open fun [startPostponedEnterTransition](index.md#-1311853996%2FFunctions%2F462465411)() |
 | [toString](index.md#-240156679%2FFunctions%2F462465411) | [androidJvm]<br>open fun [toString](index.md#-240156679%2FFunctions%2F462465411)(): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
 | [unregisterForContextMenu](index.md#1294339695%2FFunctions%2F462465411) | [androidJvm]<br>open fun [unregisterForContextMenu](index.md#1294339695%2FFunctions%2F462465411)(view: [View](https://developer.android.com/reference/kotlin/android/view/View.html)) |
-
-## Properties
-
-| Name | Summary |
-|---|---|
-| [STYLE_NO_FRAME](index.md#1722569072%2FProperties%2F462465411) | [androidJvm]<br>val [STYLE_NO_FRAME](index.md#1722569072%2FProperties%2F462465411): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
-| [STYLE_NO_INPUT](index.md#-973695565%2FProperties%2F462465411) | [androidJvm]<br>val [STYLE_NO_INPUT](index.md#-973695565%2FProperties%2F462465411): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
-| [STYLE_NO_TITLE](index.md#-1568594203%2FProperties%2F462465411) | [androidJvm]<br>val [STYLE_NO_TITLE](index.md#-1568594203%2FProperties%2F462465411): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
-| [STYLE_NORMAL](index.md#-285440680%2FProperties%2F462465411) | [androidJvm]<br>val [STYLE_NORMAL](index.md#-285440680%2FProperties%2F462465411): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |

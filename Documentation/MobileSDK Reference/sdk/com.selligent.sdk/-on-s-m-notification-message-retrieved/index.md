@@ -2,19 +2,16 @@
 
 # OnSMNotificationMessageRetrieved
 
-[androidJvm]\
 interface [OnSMNotificationMessageRetrieved](index.md)
 
 This allows to write codes that will be executed after an event is sent to the Selligent platform
 
-## See also
+#### See also
 
-androidJvm
-
-| | |
-|---|---|
-| [com.selligent.sdk.SMNotificationMessage](../-s-m-notification-message/index.md) |  |
-| [com.selligent.sdk.SMManager](../-s-m-manager/retrieve-notification-message.md) |  |
+| |
+|---|
+| [SMNotificationMessage](../-s-m-notification-message/index.md) |
+| [SMManager](../-s-m-manager/retrieve-notification-message.md) |
 
 ## Functions
 

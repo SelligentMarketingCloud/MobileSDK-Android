@@ -3,16 +3,16 @@
 # SMInAppContent
 
 [androidJvm]\
-open fun [SMInAppContent](-s-m-in-app-content.md)()
+constructor()
 
 Empty constructor of an In App Content
 
 [androidJvm]\
-open fun [SMInAppContent](-s-m-in-app-content.md)(jSon: [String](https://developer.android.com/reference/kotlin/java/lang/String.html))
+constructor(jSon: [String](https://developer.android.com/reference/kotlin/java/lang/String.html))
 
 Constructor that fills in the In App Content based on the given json
 
-## Parameters
+#### Parameters
 
 androidJvm
 

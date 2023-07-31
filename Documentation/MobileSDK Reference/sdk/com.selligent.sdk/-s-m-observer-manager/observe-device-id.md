@@ -10,7 +10,7 @@ open fun [observeDeviceId](observe-device-id.md)(@[NonNull](https://developer.an
 
 Use this method to get notified when the SDK receives the device id from the Selligent Mobile platform. It must be called on the main thread. Observing using this method will trigger the onChanged event of the observer only when the value changes after the observer is created. If there is already a value at that moment, the event will not get triggered. To change that behaviour, use the overload [observeToken](observe-token.md)
 
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -27,7 +27,7 @@ open fun [observeDeviceId](observe-device-id.md)(@[NonNull](https://developer.an
 
 Use this method to get notified when the SDK receives the device id from the Selligent Mobile platform. It must be called on the main thread.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

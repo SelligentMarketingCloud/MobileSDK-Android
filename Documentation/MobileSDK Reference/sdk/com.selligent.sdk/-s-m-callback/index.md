@@ -2,19 +2,16 @@
 
 # SMCallback
 
-[androidJvm]\
 interface [SMCallback](index.md)
 
 This allows to write codes that will be executed after an event is sent to the Selligent platform
 
-## See also
+#### See also
 
-androidJvm
-
-| | |
-|---|---|
-| [com.selligent.sdk.SMEvent](../-s-m-event/index.md) |  |
-| [com.selligent.sdk.SMManager](../-s-m-manager/send-s-m-event.md) |  |
+| |
+|---|
+| [SMEvent](../-s-m-event/index.md) |
+| [SMManager](../-s-m-manager/send-s-m-event.md) |
 
 ## Functions
 

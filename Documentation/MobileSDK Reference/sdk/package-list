@@ -5,8 +5,10 @@ $dokka.location:com.selligent.sdk/OnSMNotificationMessageRetrieved///PointingToD
 $dokka.location:com.selligent.sdk/OnSMNotificationMessageRetrieved/onError/#java.lang.Exception/PointingToDeclaration/sdk/com.selligent.sdk/-on-s-m-notification-message-retrieved/on-error.md
 $dokka.location:com.selligent.sdk/OnSMNotificationMessageRetrieved/onSuccess/#com.selligent.sdk.SMNotificationMessage/PointingToDeclaration/sdk/com.selligent.sdk/-on-s-m-notification-message-retrieved/on-success.md
 $dokka.location:com.selligent.sdk/SMApplication///PointingToDeclaration/sdk/com.selligent.sdk/-s-m-application/index.md
+$dokka.location:com.selligent.sdk/SMApplication/SMApplication/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-application/-s-m-application.md
 $dokka.location:com.selligent.sdk/SMApplication/onCreate/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-application/on-create.md
 $dokka.location:com.selligent.sdk/SMBaseActivity///PointingToDeclaration/sdk/com.selligent.sdk/-s-m-base-activity/index.md
+$dokka.location:com.selligent.sdk/SMBaseActivity/SMBaseActivity/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-base-activity/-s-m-base-activity.md
 $dokka.location:com.selligent.sdk/SMBaseActivity/onCreateOptionsMenu/#android.view.Menu/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-base-activity/on-create-options-menu.md
 $dokka.location:com.selligent.sdk/SMBaseActivity/onNewIntent/#android.content.Intent/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-base-activity/on-new-intent.md
 $dokka.location:com.selligent.sdk/SMBaseActivity/onStart/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-base-activity/on-start.md
@@ -33,6 +35,7 @@ $dokka.location:com.selligent.sdk/SMContentType/valueOf/#java.lang.String/Pointi
 $dokka.location:com.selligent.sdk/SMContentType/values/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-content-type/values.md
 $dokka.location:com.selligent.sdk/SMDeviceInfos///PointingToDeclaration/sdk/com.selligent.sdk/-s-m-device-infos/index.md
 $dokka.location:com.selligent.sdk/SMDeviceInfos/ExternalId/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-device-infos/-external-id.md
+$dokka.location:com.selligent.sdk/SMDeviceInfos/SMDeviceInfos/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-device-infos/-s-m-device-infos.md
 $dokka.location:com.selligent.sdk/SMEvent///PointingToDeclaration/sdk/com.selligent.sdk/-s-m-event/index.md
 $dokka.location:com.selligent.sdk/SMEvent/Callback/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-event/-callback.md
 $dokka.location:com.selligent.sdk/SMEvent/Data/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-event/-data.md
@@ -138,6 +141,7 @@ $dokka.location:com.selligent.sdk/SMInAppRefreshType///PointingToDeclaration/sd
 $dokka.location:com.selligent.sdk/SMInAppRefreshType/valueOf/#java.lang.String/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-in-app-refresh-type/value-of.md
 $dokka.location:com.selligent.sdk/SMInAppRefreshType/values/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-in-app-refresh-type/values.md
 $dokka.location:com.selligent.sdk/SMLink///PointingToDeclaration/sdk/com.selligent.sdk/-s-m-link/index.md
+$dokka.location:com.selligent.sdk/SMLink/SMLink/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-link/-s-m-link.md
 $dokka.location:com.selligent.sdk/SMLinkAction.broadcastEvent///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}sdk/com.selligent.sdk/-s-m-link-action/broadcast-event/index.md
 $dokka.location:com.selligent.sdk/SMLinkAction.deeplink///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}sdk/com.selligent.sdk/-s-m-link-action/deeplink/index.md
 $dokka.location:com.selligent.sdk/SMLinkAction.externalApp///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}sdk/com.selligent.sdk/-s-m-link-action/external-app/index.md
@@ -276,6 +280,7 @@ $dokka.location:com.selligent.sdk/SMNotificationMessage/getNotificationButtons/#
 $dokka.location:com.selligent.sdk/SMNotificationMessage/getNotificationTitle/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-notification-message/get-notification-title.md
 $dokka.location:com.selligent.sdk/SMNotificationMessage/getReceptionDate/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-notification-message/get-reception-date.md
 $dokka.location:com.selligent.sdk/SMObserverManager///PointingToDeclaration/sdk/com.selligent.sdk/-s-m-observer-manager/index.md
+$dokka.location:com.selligent.sdk/SMObserverManager/SMObserverManager/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-observer-manager/-s-m-observer-manager.md
 $dokka.location:com.selligent.sdk/SMObserverManager/observeClickedButton/#androidx.lifecycle.LifecycleOwner#androidx.lifecycle.Observer<com.selligent.sdk.SMNotificationButton>#boolean/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-observer-manager/observe-clicked-button.md
 $dokka.location:com.selligent.sdk/SMObserverManager/observeClickedButton/#androidx.lifecycle.LifecycleOwner#androidx.lifecycle.Observer<com.selligent.sdk.SMNotificationButton>/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-observer-manager/observe-clicked-button.md
 $dokka.location:com.selligent.sdk/SMObserverManager/observeDeviceId/#androidx.lifecycle.LifecycleOwner#androidx.lifecycle.Observer<java.lang.String>#boolean/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-observer-manager/observe-device-id.md
@@ -317,6 +322,7 @@ $dokka.location:com.selligent.sdk/SMSettings/NotificationChannelId/#/PointingToD
 $dokka.location:com.selligent.sdk/SMSettings/NotificationChannelName/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-settings/-notification-channel-name.md
 $dokka.location:com.selligent.sdk/SMSettings/PrivateKey/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-settings/-private-key.md
 $dokka.location:com.selligent.sdk/SMSettings/RemoteMessageDisplayType/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-settings/-remote-message-display-type.md
+$dokka.location:com.selligent.sdk/SMSettings/SMSettings/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-settings/-s-m-settings.md
 $dokka.location:com.selligent.sdk/SMSettings/WebServiceUrl/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-settings/-web-service-url.md
 $dokka.location:com.selligent.sdk/SMSettings/WebViewNavigationOverride/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-settings/-web-view-navigation-override.md
 $dokka.location:com.selligent.sdk/SMWebViewNavigationOption.ResumeNavigation///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}sdk/com.selligent.sdk/-s-m-web-view-navigation-option/-resume-navigation/index.md

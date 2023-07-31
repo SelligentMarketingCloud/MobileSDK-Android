@@ -7,7 +7,7 @@ open fun [enableInAppMessages](enable-in-app-messages.md)(refreshType: [SMInAppR
 
 This method enables the management of &quot;in app&quot; messages.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

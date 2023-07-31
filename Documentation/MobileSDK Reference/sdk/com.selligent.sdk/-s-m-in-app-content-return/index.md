@@ -2,18 +2,15 @@
 
 # SMInAppContentReturn
 
-[androidJvm]\
 interface [SMInAppContentReturn](index.md)
 
 Interface used to implement the code that will be executed after retrieving the In-App contents
 
-## See also
+#### See also
 
-androidJvm
-
-| | |
-|---|---|
-| [com.selligent.sdk.SMManager](../-s-m-manager/get-in-app-contents.md) |  |
+| |
+|---|
+| [SMManager](../-s-m-manager/get-in-app-contents.md) |
 
 ## Functions
 

@@ -11,7 +11,7 @@ Compares this instance with the specified object and indicates if they are equal
 
 true if the specified object is equal to this Object; false otherwise.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

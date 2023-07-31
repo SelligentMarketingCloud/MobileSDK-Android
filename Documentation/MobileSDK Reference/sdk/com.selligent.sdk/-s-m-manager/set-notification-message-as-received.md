@@ -7,18 +7,16 @@ open fun [setNotificationMessageAsReceived](set-notification-message-as-received
 
 It sends a PushReceived event to the Selligent Mobile Platform. Make sure this is only called once per push as it will send the event everytime.
 
-## See also
-
-androidJvm
-
-| | |
-|---|---|
-| [com.selligent.sdk.SMNotificationMessage](../-s-m-notification-message/index.md) |  |
-
-## Parameters
+#### Parameters
 
 androidJvm
 
 | | |
 |---|---|
 | notificationMessage | the SMNotificationMessage to mark as received |
+
+#### See also
+
+| |
+|---|
+| [SMNotificationMessage](../-s-m-notification-message/index.md) |

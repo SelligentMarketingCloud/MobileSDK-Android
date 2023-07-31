@@ -11,7 +11,7 @@ Gets the list of valid [SMInAppContent](../-s-m-in-app-content/index.md) for the
 
 An [ArrayList](https://developer.android.com/reference/kotlin/java/util/ArrayList.html) of [SMInAppContent](../-s-m-in-app-content/index.md).
 
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -26,7 +26,7 @@ open fun [getInAppContents](get-in-app-contents.md)(category: [String](https://d
 
 Gets the list of valid [SMInAppContent](../-s-m-in-app-content/index.md) for the given type and category. Use this method if you do not want to implement our Fragments.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

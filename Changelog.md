@@ -1,5 +1,9 @@
 # SDK Changelog
 
+- Version 4.4.0
+	- Ensured compatibility with Android 14 (API 34)
+	- Upgraded Gradle Plugin to 8.1.0
+
 - Version 4.3.0
 	- Increased minSdkVersion to 21 (Android 5.0)
 	- Fixed a bug where some dependencies were falsely detected as missing when the app is minified, 

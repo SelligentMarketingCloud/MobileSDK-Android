@@ -7,7 +7,7 @@ open fun [executeButtonAction](execute-button-action.md)(context: [Context](http
 
 This method will execute the action attached to the given [SMNotificationButton](../-s-m-notification-button/index.md) of the given [SMInAppMessage](../-s-m-in-app-message/index.md). It will also send an event to the platform to inform the button was clicked. Use this method if you do not want to implement our Fragments.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

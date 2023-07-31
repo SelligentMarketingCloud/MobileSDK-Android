@@ -7,7 +7,7 @@ open fun [setInAppContentAsSeen](set-in-app-content-as-seen.md)(inAppContent: [S
 
 Set the given [SMInAppContent](../-s-m-in-app-content/index.md) as seen. It will also send an event to the platform to inform it. Use this method if you do not want to implement our Fragments.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

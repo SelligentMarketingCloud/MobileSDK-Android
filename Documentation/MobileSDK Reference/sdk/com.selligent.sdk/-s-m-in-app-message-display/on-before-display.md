@@ -11,7 +11,7 @@ This method is called before displaying an In-App Message linked to a push notif
 
 true if you want the SDK to display the In-App Message, return false if you want to do it yourself.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

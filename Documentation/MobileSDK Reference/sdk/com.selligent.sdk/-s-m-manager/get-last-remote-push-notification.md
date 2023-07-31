@@ -3,7 +3,15 @@
 # getLastRemotePushNotification
 
 [androidJvm]\
-open fun [getLastRemotePushNotification](get-last-remote-push-notification.md)(): [HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap.html)&lt;[String](https://developer.android.com/reference/kotlin/java/lang/String.html), [String](https://developer.android.com/reference/kotlin/java/lang/String.html)&gt;
+open fun [~~getLastRemotePushNotification~~](get-last-remote-push-notification.md)(): [HashMap](https://developer.android.com/reference/kotlin/java/util/HashMap.html)&lt;[String](https://developer.android.com/reference/kotlin/java/lang/String.html), [String](https://developer.android.com/reference/kotlin/java/lang/String.html)&gt;
+
+---
+
+### Deprecated (for removal)
+
+Since version 4.1.0
+
+---
 
 Get the id and the title of the latest received remote notification This is mostly used in conjunction with RemoteMessageDisplayType set to None
 
@@ -13,4 +21,4 @@ a HashMap containing the &quot;id&quot; and &quot;title&quot; of the last remote
 
 #### Deprecated
 
-since 4.0.1, use [retrieveLastReceivedNotificationContent](retrieve-last-received-notification-content.md) instead
+since 4.1.0, use [retrieveLastReceivedNotificationContent](retrieve-last-received-notification-content.md) instead

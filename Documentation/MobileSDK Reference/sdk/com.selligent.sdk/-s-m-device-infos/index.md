@@ -2,10 +2,11 @@
 
 # SMDeviceInfos
 
-[androidJvm]\
-@[Deprecated](https://developer.android.com/reference/kotlin/java/lang/Deprecated.html)
+open class [~~SMDeviceInfos~~](index.md)---
 
-~~open~~ ~~class~~ [~~SMDeviceInfos~~](index.md)
+### Deprecated
+
+---
 
 This class is a set of device properties that can be sent to the platform.
 
@@ -13,13 +14,17 @@ This class is a set of device properties that can be sent to the platform.
 
 since 4.0
 
-## See also
+#### See also
 
-androidJvm
+| |
+|---|
+| [SMManager](../-s-m-manager/send-device-infos.md) |
+
+## Constructors
 
 | | |
 |---|---|
-| [com.selligent.sdk.SMManager](../-s-m-manager/send-device-infos.md) |  |
+| [SMDeviceInfos](-s-m-device-infos.md) | [androidJvm]<br>constructor() |
 
 ## Properties
 

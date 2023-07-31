@@ -7,7 +7,7 @@ open fun [deleteInAppMessages](delete-in-app-messages.md)(messageIds: [Array](ht
 
 This method deletes several In-App Messages at once.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

@@ -7,16 +7,7 @@ open fun [setButtonAsClicked](set-button-as-clicked.md)(@[NonNull](https://devel
 
 It sends a ButtonClick event to the Selligent Mobile Platform. It will send the event everytime the method is called.
 
-## See also
-
-androidJvm
-
-| | |
-|---|---|
-| [com.selligent.sdk.SMNotificationMessage](../-s-m-notification-message/index.md) |  |
-| [com.selligent.sdk.SMNotificationButton](../-s-m-notification-button/index.md) |  |
-
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -24,3 +15,10 @@ androidJvm
 |---|---|
 | notificationMessage | the SMNotificationMessage containing the button |
 | notificationButton | the SMNotificationButton that was clicked |
+
+#### See also
+
+| |
+|---|
+| [SMNotificationMessage](../-s-m-notification-message/index.md) |
+| [SMNotificationButton](../-s-m-notification-button/index.md) |

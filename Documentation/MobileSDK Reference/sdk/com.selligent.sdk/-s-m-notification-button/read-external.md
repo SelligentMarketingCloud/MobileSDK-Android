@@ -7,7 +7,7 @@ open fun [readExternal](read-external.md)(serializedObject: [ObjectInput](https:
 
 This method is called when deserializing the object. It should not be called manually.
 
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -15,9 +15,9 @@ androidJvm
 |---|---|
 | serializedObject | the [ObjectInput](https://developer.android.com/reference/kotlin/java/io/ObjectInput.html) object containing all the values of the SMNotificationButton object to recreate. |
 
-## Throws
+#### Throws
 
-| | |
-|---|---|
-| [java.io.IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html) |  |
-| [java.lang.ClassNotFoundException](https://developer.android.com/reference/kotlin/java/lang/ClassNotFoundException.html) |  |
+| |
+|---|
+| [IOException](https://developer.android.com/reference/kotlin/java/io/IOException.html) |
+| [ClassNotFoundException](https://developer.android.com/reference/kotlin/java/lang/ClassNotFoundException.html) |

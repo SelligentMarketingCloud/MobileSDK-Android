@@ -11,7 +11,7 @@ Class implementing the receiver that will listen to connectivity changes. When t
 
 | | |
 |---|---|
-| [SMForegroundGcmBroadcastReceiver](-s-m-foreground-gcm-broadcast-receiver.md) | [androidJvm]<br>open fun [SMForegroundGcmBroadcastReceiver](-s-m-foreground-gcm-broadcast-receiver.md)(context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html))<br>Constructor of the class. |
+| [SMForegroundGcmBroadcastReceiver](-s-m-foreground-gcm-broadcast-receiver.md) | [androidJvm]<br>constructor(context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html))<br>Constructor of the class. |
 
 ## Functions
 
@@ -25,6 +25,8 @@ Class implementing the receiver that will listen to connectivity changes. When t
 | [getResultCode](index.md#-1855658543%2FFunctions%2F462465411) | [androidJvm]<br>fun [getResultCode](index.md#-1855658543%2FFunctions%2F462465411)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
 | [getResultData](index.md#485630644%2FFunctions%2F462465411) | [androidJvm]<br>fun [getResultData](index.md#485630644%2FFunctions%2F462465411)(): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
 | [getResultExtras](index.md#153681375%2FFunctions%2F462465411) | [androidJvm]<br>fun [getResultExtras](index.md#153681375%2FFunctions%2F462465411)(makeMap: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)): [Bundle](https://developer.android.com/reference/kotlin/android/os/Bundle.html) |
+| [getSentFromPackage](index.md#289542651%2FFunctions%2F462465411) | [androidJvm]<br>open fun [getSentFromPackage](index.md#289542651%2FFunctions%2F462465411)(): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
+| [getSentFromUid](index.md#-726187215%2FFunctions%2F462465411) | [androidJvm]<br>open fun [getSentFromUid](index.md#-726187215%2FFunctions%2F462465411)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
 | [goAsync](index.md#478464125%2FFunctions%2F462465411) | [androidJvm]<br>fun [goAsync](index.md#478464125%2FFunctions%2F462465411)(): [BroadcastReceiver.PendingResult](https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.PendingResult.html) |
 | [isInitialStickyBroadcast](index.md#-448034677%2FFunctions%2F462465411) | [androidJvm]<br>fun [isInitialStickyBroadcast](index.md#-448034677%2FFunctions%2F462465411)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |
 | [isOrderedBroadcast](index.md#1250697259%2FFunctions%2F462465411) | [androidJvm]<br>fun [isOrderedBroadcast](index.md#1250697259%2FFunctions%2F462465411)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) |

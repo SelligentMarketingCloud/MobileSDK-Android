@@ -7,10 +7,8 @@ open var [WebViewNavigationOverride](-web-view-navigation-override.md): [SMWebVi
 
 Instantiate this if you want to override the navigation in the WebViews displayed by the In-App messages. It will allow you to check the link clicked by the user and decide how the SDK will handle (or not) the navigation.
 
-## See also
+#### See also
 
-androidJvm
-
-| | |
-|---|---|
-| [com.selligent.sdk.SMWebViewNavigationOverride](../-s-m-web-view-navigation-override/index.md) |  |
+| |
+|---|
+| [SMWebViewNavigationOverride](../-s-m-web-view-navigation-override/index.md) |

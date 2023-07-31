@@ -10,7 +10,7 @@ open fun [observePushReceived](observe-push-received.md)(@[NonNull](https://deve
 
 Use this method to get notified when a push notification is received while the app is in foreground. It must be called on the main thread. Observing using this method will trigger the onChanged event of the observer only when the value changes after the observer is created. If there is already a value at that moment, the event will not get triggered. To change that behaviour, use the overload [observeClickedButton](observe-clicked-button.md)
 
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -27,7 +27,7 @@ open fun [observePushReceived](observe-push-received.md)(@[NonNull](https://deve
 
 Use this method to get notified when a push notification is received while the app is in foreground. It must be called on the main thread.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

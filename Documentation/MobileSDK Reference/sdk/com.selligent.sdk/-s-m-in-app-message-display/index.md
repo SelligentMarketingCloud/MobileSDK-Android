@@ -2,18 +2,15 @@
 
 # SMInAppMessageDisplay
 
-[androidJvm]\
 interface [SMInAppMessageDisplay](index.md)
 
 Implement this interface if you do not want the SDK to display the In-App Message linked to a push notification and do it yourself
 
-## See also
+#### See also
 
-androidJvm
-
-| | |
-|---|---|
-| [com.selligent.sdk.SMManager](../-s-m-manager/check-and-display-message.md) |  |
+| |
+|---|
+| [SMManager](../-s-m-manager/check-and-display-message.md) |
 
 ## Functions
 

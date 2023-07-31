@@ -1,6 +1,6 @@
 //[sdk](../../index.md)/[com.selligent.sdk](index.md)
 
-# Package com.selligent.sdk
+# Package-level declarations
 
 ## Types
 
@@ -12,7 +12,7 @@
 | [SMCallback](-s-m-callback/index.md) | [androidJvm]<br>interface [SMCallback](-s-m-callback/index.md)<br>This allows to write codes that will be executed after an event is sent to the Selligent platform |
 | [SMClearCache](-s-m-clear-cache/index.md) | [androidJvm]<br>enum [SMClearCache](-s-m-clear-cache/index.md) |
 | [SMContentType](-s-m-content-type/index.md) | [androidJvm]<br>enum [SMContentType](-s-m-content-type/index.md)<br>Enum listing the different types of In App Content |
-| [SMDeviceInfos](-s-m-device-infos/index.md) | [androidJvm]<br>@[Deprecated](https://developer.android.com/reference/kotlin/java/lang/Deprecated.html)<br>~~open~~ ~~class~~ [~~SMDeviceInfos~~](-s-m-device-infos/index.md)<br>This class is a set of device properties that can be sent to the platform. |
+| [SMDeviceInfos](-s-m-device-infos/index.md) | [androidJvm]<br>open class [~~SMDeviceInfos~~](-s-m-device-infos/index.md)<br>This class is a set of device properties that can be sent to the platform. |
 | [SMEvent](-s-m-event/index.md) | [androidJvm]<br>open class [SMEvent](-s-m-event/index.md) : [Externalizable](https://developer.android.com/reference/kotlin/java/io/Externalizable.html)<br>Object used to send a custom event to the Selligent platform with SMManager.sendEvent. |
 | [SMEventUserLogin](-s-m-event-user-login/index.md) | [androidJvm]<br>open class [SMEventUserLogin](-s-m-event-user-login/index.md) : SMEventUser<br>Object used to send a &quot;login&quot; event to the Selligent platform with SMManager.sendEvent. |
 | [SMEventUserLogout](-s-m-event-user-logout/index.md) | [androidJvm]<br>open class [SMEventUserLogout](-s-m-event-user-logout/index.md) : SMEventUser<br>Object used to send a &quot;logout&quot; event to the Selligent platform with SMManager.sendEvent. |

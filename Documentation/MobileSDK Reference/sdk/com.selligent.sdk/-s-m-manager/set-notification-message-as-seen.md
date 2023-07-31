@@ -7,18 +7,16 @@ open fun [setNotificationMessageAsSeen](set-notification-message-as-seen.md)(@[N
 
 It sends a PushOpened event to the Selligent Mobile Platform. It will send the event everytime the method is called.
 
-## See also
-
-androidJvm
-
-| | |
-|---|---|
-| [com.selligent.sdk.SMNotificationMessage](../-s-m-notification-message/index.md) |  |
-
-## Parameters
+#### Parameters
 
 androidJvm
 
 | | |
 |---|---|
 | notificationMessage | the SMNotificationMessage to mark as seen |
+
+#### See also
+
+| |
+|---|
+| [SMNotificationMessage](../-s-m-notification-message/index.md) |

@@ -11,7 +11,7 @@ Method used to create a new instance of SMInAppContentHtmlFragment that will dis
 
 the new instance of SMInAppContentImageFragment or null if one of the parameters is null.
 
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -28,7 +28,7 @@ Method used to create a new instance of SMInAppContentHtmlFragment
 
 the new instance of SMInAppContentImageFragment or null if one of the parameters is null.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

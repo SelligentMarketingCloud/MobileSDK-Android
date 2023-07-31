@@ -10,7 +10,7 @@ open fun [observeToken](observe-token.md)(@[NonNull](https://developer.android.c
 
 Use this method to get notified when a new Firebase token was received by the SDK. It replaces the broadcast BROADCAST_EVENT_RECEIVED_GCM_TOKEN. It must be called on the main thread. Observing using this method will trigger the onChanged event of the observer only when the value changes after the observer is created. If there is already a value at that moment, the event will not get triggered. To change that behaviour, use the overload [observeToken](observe-token.md)
 
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -27,7 +27,7 @@ open fun [observeToken](observe-token.md)(@[NonNull](https://developer.android.c
 
 Use this method to get notified when a new Firebase token was received by the SDK. It replaces the broadcast BROADCAST_EVENT_RECEIVED_GCM_TOKEN. It must be called on the main thread.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

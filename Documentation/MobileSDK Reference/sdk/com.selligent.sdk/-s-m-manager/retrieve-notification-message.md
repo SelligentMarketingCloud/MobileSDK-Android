@@ -7,15 +7,7 @@ open fun [retrieveNotificationMessage](retrieve-notification-message.md)(@[NonNu
 
 It will trigger the [onSuccess](../-on-s-m-notification-message-retrieved/on-success.md) when the [SMNotificationMessage](../-s-m-notification-message/index.md) is retrieved from the intent. If there is none in the intent, neither onSuccess nor onError will be triggered. If, for some reason, an error occurs, onError will be triggered.
 
-## See also
-
-androidJvm
-
-| | |
-|---|---|
-| [com.selligent.sdk.OnSMNotificationMessageRetrieved](../-on-s-m-notification-message-retrieved/index.md) |  |
-
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -23,3 +15,9 @@ androidJvm
 |---|---|
 | intent | the Intent containing the push |
 | notificationMessageRetrieved | the callback that will be triggered after retrieving the SMNotificationMessage |
+
+#### See also
+
+| |
+|---|
+| [OnSMNotificationMessageRetrieved](../-on-s-m-notification-message-retrieved/index.md) |

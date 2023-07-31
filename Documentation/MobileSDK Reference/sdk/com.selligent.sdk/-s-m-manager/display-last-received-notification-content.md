@@ -7,7 +7,7 @@ open fun [displayLastReceivedNotificationContent](display-last-received-notifica
 
 Display the latest in-app message received with a push notification This is mostly used in conjunction with RemoteMessageDisplayType set to None
 
-## Parameters
+#### Parameters
 
 androidJvm
 

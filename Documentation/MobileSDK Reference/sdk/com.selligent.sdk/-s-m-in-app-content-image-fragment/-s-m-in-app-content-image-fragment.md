@@ -3,4 +3,4 @@
 # SMInAppContentImageFragment
 
 [androidJvm]\
-open fun [SMInAppContentImageFragment](-s-m-in-app-content-image-fragment.md)()
+constructor()

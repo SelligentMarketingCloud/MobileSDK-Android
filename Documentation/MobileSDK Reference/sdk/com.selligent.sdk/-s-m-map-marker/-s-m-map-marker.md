@@ -3,4 +3,4 @@
 # SMMapMarker
 
 [androidJvm]\
-open fun [SMMapMarker](-s-m-map-marker.md)()
+constructor()

@@ -11,4 +11,4 @@ Implement this interface if you want to override the navigation in the WebViews 
 
 | Name | Summary |
 |---|---|
-| [shouldHandleURL](should-handle-u-r-l.md) | [androidJvm]<br>abstract fun [shouldHandleURL](should-handle-u-r-l.md)(context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html), url: [String](https://developer.android.com/reference/kotlin/java/lang/String.html)): [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)<br>This method will be called when a link is clicked in a WebView displayed by an In-App message. |
+| [shouldHandleURL](should-handle-u-r-l.md) | [androidJvm]<br>abstract fun [shouldHandleURL](should-handle-u-r-l.md)(context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html), url: [String](https://developer.android.com/reference/kotlin/java/lang/String.html)): [SMWebViewNavigationOption](../-s-m-web-view-navigation-option/index.md)<br>This method will be called when a link is clicked in a WebView displayed by an In-App message. |

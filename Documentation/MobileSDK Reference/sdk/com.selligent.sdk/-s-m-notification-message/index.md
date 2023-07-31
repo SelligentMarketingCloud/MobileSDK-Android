@@ -11,7 +11,7 @@ A notification message.
 
 | | |
 |---|---|
-| [SMNotificationMessage](-s-m-notification-message.md) | [androidJvm]<br>open fun [SMNotificationMessage](-s-m-notification-message.md)() |
+| [SMNotificationMessage](-s-m-notification-message.md) | [androidJvm]<br>constructor() |
 
 ## Functions
 

@@ -3,4 +3,4 @@
 # SMNotificationMessage
 
 [androidJvm]\
-open fun [SMNotificationMessage](-s-m-notification-message.md)()
+constructor()

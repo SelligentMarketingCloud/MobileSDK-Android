@@ -7,7 +7,7 @@ open fun [setNotificationIconColor](set-notification-icon-color.md)(argb: [Int](
 
 This allows the SDK to set a specific color to the icon for the notifications.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

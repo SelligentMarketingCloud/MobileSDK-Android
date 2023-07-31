@@ -142,7 +142,7 @@ Since 3.8.3, our SDK is available on Maven Central.
 In the build.gradle file in your app module, add the following line:
 
 ```xml
-implementation 'com.selligent.sdk:selligent_mobile_sdk:4.3.0'
+implementation 'com.selligent.sdk:selligent_mobile_sdk:4.4.0'
 ```
 
 You need to have MavenCentral in your list of repositories.
@@ -161,19 +161,19 @@ And select the file. Once it is done, synchronize and build the project.
 #### minSdkVersion
 The `minSdkVersion` is `21`.
 
-> The SDK was built using the Gradle Plugin 7.4.2
+> The SDK was built using the Gradle Plugin 8.1.0
 
 ## Other libraries
 You need to add some external dependencies in your app gradle file:
 - Firebase messaging and Firebase-core 
   - If your version of Gradle is 5 or higher, you can simply add
     ```gradle
-    implementation platform('com.google.firebase:firebase-bom:32.1.1')
+    implementation platform('com.google.firebase:firebase-bom:32.2.0')
     implementation 'com.google.firebase:firebase-messaging'
     ```
   - If you are using a lower version of Gradle, you need to specify the version of Firebase-messaging 
     ```gradle
-    com.google.firebase:firebase-messaging:23.1.2
+    com.google.firebase:firebase-messaging:23.2.0
     ```
  
 The version of Firebase must be at least 19 to be compatible with our SDK 3.x. Firebase 19 requires the use of the "AndroidX" libraries instead of the old "support" ones. 
@@ -194,7 +194,7 @@ apply plugin: 'com.google.gms.google-services'
 - Kotlin coroutines
 ```gradle
 androidx.lifecycle:lifecycle-runtime-ktx:2.6.1
-org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1
+org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3
 ```
   
 - If you plan on sending Map type push, you need a dependency to play-services-maps:

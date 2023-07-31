@@ -7,7 +7,7 @@ open fun [setInAppMessageAsSeen](set-in-app-message-as-seen.md)(inAppMessage: [S
 
 Set the given [SMInAppMessage](../-s-m-in-app-message/index.md) as seen. It will also send an event to the platform to inform it. Use this method if you want to display the In-App messages yourself.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

@@ -11,7 +11,7 @@ Method used to create a new instance of SMInAppContentImageFragment
 
 the new instance of SMInAppContentImageFragment or null if one of the parameters is null.
 
-## Parameters
+#### Parameters
 
 androidJvm
 

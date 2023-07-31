@@ -11,10 +11,8 @@ Gets the icon set by setNotificationLargeIcon.
 
 the Bitmap of the icon
 
-## See also
+#### See also
 
-androidJvm
-
-| | |
-|---|---|
-| [com.selligent.sdk.SMManager](set-notification-large-icon.md) |  |
+| |
+|---|
+| [SMManager](set-notification-large-icon.md) |

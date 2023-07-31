@@ -7,7 +7,7 @@ open fun [checkAndDisplayMessage](check-and-display-message.md)(intent: [Intent]
 
 This method will check if there is a message to be displayed in the given intent and will display it. It has to be used in the onCreate and onNewIntent events if your activity does not extend [SMBaseActivity](../-s-m-base-activity/index.md). If you want to manage the display of the In-App Message linked to a push notification yourself, use the overload [checkAndDisplayMessage](check-and-display-message.md)
 
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -21,7 +21,7 @@ open fun [checkAndDisplayMessage](check-and-display-message.md)(intent: [Intent]
 
 This method will check if there is a message to be displayed in the given intent and will display it. It has to be used in the onCreate and onNewIntent events if your activity does not extend [SMBaseActivity](../-s-m-base-activity/index.md). This overload allows you to manage the display of the In-App Message linked to a push notification yourself
 
-## Parameters
+#### Parameters
 
 androidJvm
 

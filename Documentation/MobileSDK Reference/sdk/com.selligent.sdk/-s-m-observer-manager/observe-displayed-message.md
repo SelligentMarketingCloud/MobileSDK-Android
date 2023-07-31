@@ -10,7 +10,7 @@ open fun [observeDisplayedMessage](observe-displayed-message.md)(@[NonNull](http
 
 Use this method to get notified when an In-App message is about to be displayed. It replaces the broadcast BROADCAST_EVENT_WILL_DISPLAY_NOTIFICATION. It must be called on the main thread. Observing using this method will trigger the onChanged event of the observer only when the value changes after the observer is created. If there is already a value at that moment, the event will not get triggered. To change that behaviour, use the overload [observeDisplayedMessage](observe-displayed-message.md)
 
-## Parameters
+#### Parameters
 
 androidJvm
 
@@ -27,7 +27,7 @@ open fun [observeDisplayedMessage](observe-displayed-message.md)(@[NonNull](http
 
 Use this method to get notified when an In-App message is about to be displayed. It replaces the broadcast BROADCAST_EVENT_WILL_DISPLAY_NOTIFICATION. It must be called on the main thread.
 
-## Parameters
+#### Parameters
 
 androidJvm
 
