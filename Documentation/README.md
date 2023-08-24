@@ -352,7 +352,12 @@ inform the Selligent Mobile Platform if needed.
 </details>
 
 #### Permissions for Push notifications
-Since Android 13 (API 33), the user must be asked the permission before displaying a notification. For apps targeting API 32 or lower running on Android 13, the OS will do it automatically. For apps targeting API 33 or higher, it must be done manually. As the best moment to do that to maximize the chances of the user agreeing depends on the workflow of the app, the SDK cannot do it automatically. Therefore, we introduced some helper functions (you can also directly call the Android API if you prefer):
+Since Android 13 (API 33), the user must be asked the permission before displaying a notification. 
+First, add the following line to AndroidManifest.xml
+```xml
+<uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+```
+For apps targeting API 32 or lower running on Android 13, the OS asks the user automatically. For apps targeting API 33 or higher, it must be done manually. As the best moment to do that to maximize the chances of the user agreeing depends on the workflow of the app, the SDK cannot do it automatically. Therefore, we introduced some helper functions (you can also directly call the Android API if you prefer):
 ```java
 //This method will tell if the permission to post notifications was granted or not.
 //The check is only performed when running on Android 13 (API 33) and higher.
