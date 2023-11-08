@@ -4,7 +4,7 @@
 
 open class [SMEventUserUnregister](index.md) : SMEventUser
 
-Object used to send an &quot;unregister&quot; event to the Selligent platform with SMManager.sendEvent.
+Object used to send an &quot;unregister&quot; event to the Marigold Engage platform with SMManager.sendEvent.
 
 #### See also
 

@@ -5,7 +5,7 @@
 [androidJvm]\
 open fun [setNotificationMessageAsReceived](set-notification-message-as-received.md)(@[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)notificationMessage: [SMNotificationMessage](../-s-m-notification-message/index.md))
 
-It sends a PushReceived event to the Selligent Mobile Platform. Make sure this is only called once per push as it will send the event everytime.
+It sends a PushReceived event to the Marigold Engage Mobile Platform. Make sure this is only called once per push as it will send the event everytime.
 
 #### Parameters
 

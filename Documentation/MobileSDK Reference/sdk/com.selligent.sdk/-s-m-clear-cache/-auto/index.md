@@ -5,4 +5,4 @@
 [androidJvm]\
 [Auto](index.md)
 
-* Default value, Selligent Mobile SDK manages the lifespan automatically.
+* Default value, Marigold Engage Mobile SDK manages the lifespan automatically.

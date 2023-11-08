@@ -4,17 +4,17 @@
 
 Copyright
 
-The contents of this manual cover material copyrighted by Selligent. Selligent reserves all intellectual property rights on the manual, which should be treated as confidential information as defined under the agreed upon software licence/lease terms and conditions.
+The contents of this manual cover material copyrighted by Marigold. Marigold reserves all intellectual property rights on the manual, which should be treated as confidential information as defined under the agreed upon software licence/lease terms and conditions.
 
-The use and distribution of this manual is strictly limited to authorised users of the Selligent Interactive Marketing Software (hereafter the "Software") and can only be used for the purpose of using the Software under the agreed upon software licence/lease terms and conditions. Upon termination of the right to use the Software, this manual and any copies made must either be returned to Selligent or be destroyed, at the latest two weeks after the right to use the Software has ended.
+The use and distribution of this manual is strictly limited to authorised users of the Marigold Interactive Marketing Software (hereafter the "Software") and can only be used for the purpose of using the Software under the agreed upon software licence/lease terms and conditions. Upon termination of the right to use the Software, this manual and any copies made must either be returned to Marigold or be destroyed, at the latest two weeks after the right to use the Software has ended.
 
-With the exception of the first sentence of the previous paragraph, no part of this manual may be reprinted or reproduced or distributed or utilised in any form or by any electronic, mechanical or other means, not known or hereafter invented, included photocopying and recording, or in any information storage or retrieval or distribution system, without the prior permission in writing from Selligent.
+With the exception of the first sentence of the previous paragraph, no part of this manual may be reprinted or reproduced or distributed or utilised in any form or by any electronic, mechanical or other means, not known or hereafter invented, included photocopying and recording, or in any information storage or retrieval or distribution system, without the prior permission in writing from Marigold.
 
-Selligent will not be responsible or liable for any accidental or inevitable damage that may result from unauthorised access or modifications.
+Marigold will not be responsible or liable for any accidental or inevitable damage that may result from unauthorised access or modifications.
 
 User is aware that this manual may contain errors or inaccuracies and that it may be revised without advance notice. This manual is updated frequently.
 
-Selligent welcomes any recommendations or suggestions regarding the manual, as it helps to continuously improve the quality of our products and manuals.
+Marigold welcomes any recommendations or suggestions regarding the manual, as it helps to continuously improve the quality of our products and manuals.
 
 
 ## Table of Contents
@@ -26,7 +26,7 @@ Selligent welcomes any recommendations or suggestions regarding the manual, as i
   - [Including the SDK in your project](#including-the-sdk-in-your-project)
     - [SDK library](#sdk-library)
     - [Add the dependency](#add-the-dependency)
-      - [Import the Selligent library](#import-the-selligent-library)
+      - [Import the Marigold Engage library](#import-the-marigold-engage-library)
       - [minSdkVersion](#minsdkversion)
   - [Other libraries](#other-libraries)
   - [How to use the SDK](#how-to-use-the-sdk)
@@ -127,7 +127,7 @@ The purpose of this document is to detail how to install the SDK into your App a
   ![](images/Picture5.png)
 </details>
 
-- Note the Server key, you will have to give it to the Selligent platform.
+- Note the Server key, you will have to give it to the Marigold Engage platform.
 
 
 ## Including the SDK in your project
@@ -147,7 +147,7 @@ implementation 'com.selligent.sdk:selligent_mobile_sdk:4.4.0'
 
 You need to have MavenCentral in your list of repositories.
 
-#### Import the Selligent library
+#### Import the Marigold Engage library
 If you prefer to directly add the aar file, create a new module that will contain it. 
 
 <details>
@@ -218,7 +218,7 @@ androidx.cardview:cardview
 androidx.work:work-runtime:2.8.1
 androidx.concurrent:concurrent-futures:1.1.0
 ```
-> <br>They replace FirebaseJobDispatcher which is deprecated and not used anymore by the Selligent SDK.
+> <br>They replace FirebaseJobDispatcher which is deprecated and not used anymore by the Marigold Engage SDK.
 
 
 ## How to use the SDK
@@ -260,10 +260,10 @@ SMManager.getInstance().start(settings, this);
 
 | Property | Description |
 | --------- | --------- |
-| `WebServiceUrl` | URL of the Selligent web service that will be called. It is given by Selligent. |
+| `WebServiceUrl` | URL of the Marigold Engage web service that will be called. It is given by Marigold. |
 | `GoogleApplicationId` | Deprecated, you can leave it to null as long as you use the JSON file given by Firebase. |
-| `ClientId` | Public key allowing the connection to the web service. It is given by Selligent. |
-| `PrivateKey` | Private key allowing the connection to the web service. It is given by Selligent. |
+| `ClientId` | Public key allowing the connection to the web service. It is given by Marigold. |
+| `PrivateKey` | Private key allowing the connection to the web service. It is given by Marigold. |
 
 ```java
 SMSettings settings = new SMSettings();
@@ -320,11 +320,11 @@ There are also some optional settings on `SMManager`:
 | `MAIN_ACTIVITY` | Setting this will allow the SDK to know which activity is your main one so that it performs certain operations only when that one is active. For example, a dialog might need to be displayed to the user to update Google-Services or a security protocol on old devices. By specifying the MainActivity, the SDK will only show them on your main Activity and not on a splash or login screen. If it is not specified, the first activity being active will be used. |
 
 ### Device id
-The device id is given by the Selligent Mobile Platform. 
+The device id is given by the Marigold Engage Mobile Platform. 
 There are two ways for you to retrieve it, should you need it:
 
 ```java
-// This method will return the device id stored by the SDK. Note that, as the device id is given by the Selligent Mobile Platform, it is possible that the value returned is empty when the call is made.
+// This method will return the device id stored by the SDK. Note that, as the device id is given by the Marigold Engage Mobile Platform, it is possible that the value returned is empty when the call is made.
 SMManager.getInstance().getDevideId()
 
 // This will allow you to observe the device id and receive it when it is received by the SDK.
@@ -343,7 +343,7 @@ setting `RemoteMessageDisplayType` given to the `SMSettings` object when calling
 and then do whatever you want with it. 
 
 > Also starting with version 3.7, the SDK will now check if the notifications were enabled/disabled in the settings of the OS for the current app and 
-inform the Selligent Mobile Platform if needed. 
+inform the Marigold Engage Mobile Platform if needed. 
 
 <details>
   <summary>Once the message is displayed, it is either in a dialog which, by default, looks like this (or in a dedicated Activity, depending of the type of the push).</summary><br/>
@@ -466,7 +466,7 @@ SMManager.getInstance().checkAndDisplayMessage(getIntent(), this, new SMInAppMes
 });
 ```
 
-> Returning false is **not the same** as not calling `checkAndDisplayMessage`. The method also sends events to the Selligent Mobile platform and executes the action behind the push or its buttons (if any).
+> Returning false is **not the same** as not calling `checkAndDisplayMessage`. The method also sends events to the Marigold Engage Mobile platform and executes the action behind the push or its buttons (if any).
 
 #### Extending SMBaseActivity
 There is a class `SMBaseActivity` in the SDK that already does everything described in the previous point and displays the push notifications. 
@@ -901,7 +901,7 @@ If you do not want the SDK to manage the push notifications, follow these steps:
 - Implement a mechanism to listen to the push, for example using `FirebaseMessagingService`
 - Retrieve the payload of the push from the intent containing it using our SDK
   ```java
-  // If no push from Selligent is present in the intent, neither onSuccess nor onError will be called.
+  // If no push from Marigold Engage is present in the intent, neither onSuccess nor onError will be called.
   SMManager.getInstance().retrieveNotificationMessage(message.toIntent(), new OnSMNotificationMessageRetrieved() { 
     // The SMNotificationMessage object contains all the information of the push (title, body, buttons, etc.), including the one from the linked in-app message if there is one.
     @Override 
@@ -915,7 +915,7 @@ If you do not want the SDK to manage the push notifications, follow these steps:
     } 
   });
   ```
-- Use our methods to send the events to the Selligent Mobile platform to inform that the push was received, seen or that a button was clicked
+- Use our methods to send the events to the Marigold Engage Mobile platform to inform that the push was received, seen or that a button was clicked
   ```java
   // Note that these methods will send the event to the platform every time they are called, so make sure to only call them when needed
   SMManager.getInstance().setNotificationMessageAsReceived(smNotificationMessage);
@@ -1060,7 +1060,7 @@ All the different classes extend `SMEvent`. They are described in the following 
 #### SMEventUserRegister
 This object is used to send a `register` event to the server with the e-mail of the user, potential data and a callback, with the purpose of linking the device to an user.
 
-> This event will create a new user in your Selligent database, if none was found.
+> This event will create a new user in your Marigold Engage database, if none was found.
 
 ```java
 Hashtable<String, String> hash = new Hashtable<>(); 
@@ -1118,7 +1118,7 @@ SMManager.getInstance().sendSMEvent(event);
 #### SMEventUserLogin
 This object is used to send a `login` event to the server with the e-mail of the user, potential data and a callback, with the purpose of linking the device to an user.
 
-> This event will **NOT** create a new user in your Selligent database, if none found.
+> This event will **NOT** create a new user in your Marigold Engage database, if none found.
 
 ```java
 Hashtable<String, String> hash = new Hashtable<>(); 
@@ -1461,7 +1461,7 @@ It will allow a push received while on the splashscreen to be transferred to the
 > This is not necessary with the new splash screen introduced in Android 12, simply set `NOTIFICATION_ACTIVITY` to your main activity.
   
 ## Troubleshooting/FAQ
-- **Q: When I look at the devices in Campaign/Selligent Marketing Cloud, why don’t they have a token?**
+- **Q: When I look at the devices in Campaign/Marigold Engage, why don’t they have a token?**
   - A: If there is no token, that means the SDK did not send it. There are a few reasons why this could happen:
     - If you don’t use the `google-services.json` file, then you have to call the method `registerDevice(Context context)` on `SMManager` in the `onStart` method of your base Activity. Also, check if the `senderId` is correctly passed to the SDK (`SMSettings.GoogleApplicationId`). Note: this is not recommended anymore as that way of retrieving the token is deprecated.
     - If you use the `google-services.json` file, make sure that it is correctly placed in your app and that you updated your `build.gradle` files as described on the Firebase website when adding cloud messaging to your app.
@@ -1469,11 +1469,11 @@ It will allow a push received while on the splashscreen to be transferred to the
 - **Q: Why don’t I receive the push on my device?**
   - A: You must check a few things. First, look at the push status in Campaign. Here are some errors you might encounter:
     - **Device subscription expired** This means the token used to contact the device is not valid anymore. It may be because the user hasn’t used the app for a while and the token expired or the user uninstalled the app. You can’t do anything here except wait for a new one to be received.
-    - **Mismatch sender id** This means the token used to contact the device was created with a sender id that does not correspond to the server key stored on the Selligent platform. Check both values on Firebase and then change the sender id given to the SDK and/or send us the correct server key.
+    - **Mismatch sender id** This means the token used to contact the device was created with a sender id that does not correspond to the server key stored on the Marigold Engage platform. Check both values on Firebase and then change the sender id given to the SDK and/or send us the correct server key.
     - **Authentication failed** The server key that you gave us is not correct. Check it on Firebase and send us the new one.
     - If the push optout is 1, then the push will not be sent to the device. Maybe it was not able to get a token or there was a call to the method `disableNotifications()`. If the status in Campaign is ok, then there might be something wrong in your app.
     - If you don’t use the `google-services.json` file, check that you added the correct permissions in your manifest
-    - Do you have another `BroadcastReceiver` listening to GCM/FCM push? If yes, then it might be trying to interpret our JSON payload and crash before our receiver has time to finish its work. You can recognize a Selligent push at its `sm` property at the root of the JSON.
+    - Do you have another `BroadcastReceiver` listening to GCM/FCM push? If yes, then it might be trying to interpret our JSON payload and crash before our receiver has time to finish its work. You can recognize a Marigold Engage push at its `sm` property at the root of the JSON.
     - When starting the SDK, did you set the property `RemoteMessageDisplayType` to `None`? This will prevent it from creating a notification and displaying the message when receiving a push while the app is in foreground.
     - Did you call the method `disableNotifications()`? This will set the push optout to `1` in Campaign, preventing it to send push to that device.
     - If you set `DoNotListenToThePush` to true, the SDK won’t listen to the push, you must do it yourself. Then, when you receive a push, you must call the method `SMManager.getInstance().displayNotification(Context context, Intent intent)`

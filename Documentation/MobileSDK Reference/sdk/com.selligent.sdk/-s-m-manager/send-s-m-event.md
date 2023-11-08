@@ -5,7 +5,7 @@
 [androidJvm]\
 open fun [sendSMEvent](send-s-m-event.md)(event: [SMEvent](../-s-m-event/index.md))
 
-Use this method to send an event to the Selligent platform. If you are sending a simple [SMEvent](../-s-m-event/index.md), then we will check if the values are different from the last time you sent them. If they are not, the event won't be sent.
+Use this method to send an event to the Marigold Engage platform. If you are sending a simple [SMEvent](../-s-m-event/index.md), then we will check if the values are different from the last time you sent them. If they are not, the event won't be sent.
 
 #### Parameters
 

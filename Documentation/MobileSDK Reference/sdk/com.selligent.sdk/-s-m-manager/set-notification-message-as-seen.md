@@ -5,7 +5,7 @@
 [androidJvm]\
 open fun [setNotificationMessageAsSeen](set-notification-message-as-seen.md)(@[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)notificationMessage: [SMNotificationMessage](../-s-m-notification-message/index.md))
 
-It sends a PushOpened event to the Selligent Mobile Platform. It will send the event everytime the method is called.
+It sends a PushOpened event to the Marigold Engage Mobile Platform. It will send the event everytime the method is called.
 
 #### Parameters
 

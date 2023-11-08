@@ -4,7 +4,7 @@
 
 open class [SMEventUserLogin](index.md) : SMEventUser
 
-Object used to send a &quot;login&quot; event to the Selligent platform with SMManager.sendEvent.
+Object used to send a &quot;login&quot; event to the Marigold Engage platform with SMManager.sendEvent.
 
 #### See also
 

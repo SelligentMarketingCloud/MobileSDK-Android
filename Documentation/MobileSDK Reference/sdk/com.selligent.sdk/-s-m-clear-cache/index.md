@@ -9,7 +9,7 @@ enum [SMClearCache](index.md)
 
 | | |
 |---|---|
-| [Auto](-auto/index.md) | [androidJvm]<br>[Auto](-auto/index.md)<br>* Default value, Selligent Mobile SDK manages the lifespan automatically. |
+| [Auto](-auto/index.md) | [androidJvm]<br>[Auto](-auto/index.md)<br>* Default value, Marigold Engage Mobile SDK manages the lifespan automatically. |
 | [None](-none/index.md) | [androidJvm]<br>[None](-none/index.md)<br>* To disable the cache mechanism. |
 | [Day](-day/index.md) | [androidJvm]<br>[Day](-day/index.md)<br>* To clear the items that are one day old |
 | [Week](-week/index.md) | [androidJvm]<br>[Week](-week/index.md)<br>* To clear the items that are one week old |

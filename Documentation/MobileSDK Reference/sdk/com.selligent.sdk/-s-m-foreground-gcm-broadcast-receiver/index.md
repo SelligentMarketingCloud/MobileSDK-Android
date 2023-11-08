@@ -5,7 +5,7 @@
 [androidJvm]\
 open class [SMForegroundGcmBroadcastReceiver](index.md) : [BroadcastReceiver](https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html)
 
-Class implementing the receiver that will listen to connectivity changes. When the device is back online, it will check if some events were not sent to the Selligent Mobile platform due to lack of connectivity and, in that case, will retry sending them. If you do not extend [SMBaseActivity](../-s-m-base-activity/index.md), you have to register and unregister this receiver respectively on the onStart and onStop events of your activities.
+Class implementing the receiver that will listen to connectivity changes. When the device is back online, it will check if some events were not sent to the Marigold Engage Mobile platform due to lack of connectivity and, in that case, will retry sending them. If you do not extend [SMBaseActivity](../-s-m-base-activity/index.md), you have to register and unregister this receiver respectively on the onStart and onStop events of your activities.
 
 ## Constructors
 

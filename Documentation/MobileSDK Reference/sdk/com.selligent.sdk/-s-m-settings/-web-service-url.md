@@ -5,4 +5,4 @@
 [androidJvm]\
 open var [WebServiceUrl](-web-service-url.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html)
 
-The URL of the Selligent web services
+The URL of the Marigold Engage web services

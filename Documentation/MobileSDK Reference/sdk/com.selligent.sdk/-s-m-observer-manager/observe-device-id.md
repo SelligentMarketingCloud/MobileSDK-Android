@@ -8,7 +8,7 @@
 
 open fun [observeDeviceId](observe-device-id.md)(@[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)lifecycleOwner: [LifecycleOwner](https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html), @[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)observer: [Observer](https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html)&lt;[String](https://developer.android.com/reference/kotlin/java/lang/String.html)&gt;)
 
-Use this method to get notified when the SDK receives the device id from the Selligent Mobile platform. It must be called on the main thread. Observing using this method will trigger the onChanged event of the observer only when the value changes after the observer is created. If there is already a value at that moment, the event will not get triggered. To change that behaviour, use the overload [observeToken](observe-token.md)
+Use this method to get notified when the SDK receives the device id from the Marigold Engage Mobile platform. It must be called on the main thread. Observing using this method will trigger the onChanged event of the observer only when the value changes after the observer is created. If there is already a value at that moment, the event will not get triggered. To change that behaviour, use the overload [observeToken](observe-token.md)
 
 #### Parameters
 
@@ -25,7 +25,7 @@ androidJvm
 
 open fun [observeDeviceId](observe-device-id.md)(@[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)lifecycleOwner: [LifecycleOwner](https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html), @[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)observer: [Observer](https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html)&lt;[String](https://developer.android.com/reference/kotlin/java/lang/String.html)&gt;, triggerEveryTime: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
 
-Use this method to get notified when the SDK receives the device id from the Selligent Mobile platform. It must be called on the main thread.
+Use this method to get notified when the SDK receives the device id from the Marigold Engage Mobile platform. It must be called on the main thread.
 
 #### Parameters
 

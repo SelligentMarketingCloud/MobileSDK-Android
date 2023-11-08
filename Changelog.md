@@ -1,5 +1,9 @@
 # SDK Changelog
 
+- Version 4.4.1
+	- Fixed bug where the creation and expiration date where missing on the notification and in-app message objects
+	- Replaced Selligent by Marigold Engage in the documentation
+
 - Version 4.4.0
 	- Ensured compatibility with Android 14 (API 34)
 	- Upgraded Gradle Plugin to 8.1.0
@@ -58,11 +62,11 @@
 
 - Version 3.8.0
 	- Added support for Huawei Mobile Services (HMS). Now, when our SDK is in an app running on a device that doesn’t have Google Play Services but has Huawei Services, it will use those to retrieve a token and listen to the push notifications. This means the SDK will work in an Android app running on a Huawei device without Google Play Services (Android or HarmonyOS). It will not, however, work in a native HarmonyOS app.
-	- NOTE: Sending push through Huawei Services is only supported by the Selligent Mobile Platform for customers using SDC. Ask your Selligent contact for more information about SDC.
+	- NOTE: Sending push through Huawei Services is only supported by the Engage Mobile Platform for customers using SDC. Ask your Engage contact for more information about SDC.
 
 - Version 3.7.0
 	- Added support to Android 12 (API 31)
-	- Added a check when starting the SDK to verify if the notifications were enabled/disabled in the OS settings and send the information to the Selligent Mobile platform if needed.
+	- Added a check when starting the SDK to verify if the notifications were enabled/disabled in the OS settings and send the information to the Engage Mobile platform if needed.
 	- Enabled DOM storage for the Web views
 	- Exposed the push notification payload and added helper methods to manage the events (cf. Manual management of the push).
 - Version 3.6.0
@@ -92,7 +96,7 @@
 	- Added overloads to the Observe methods of SMObserverManager to give the possibility to change the behaviour regarding when the onChanged events are triggered on the observers. 
 - Version 3.1.0
 	- FirebaseJobDispatcher, which was deprecated by Google and will not be supported anymore starting April 2020, was replaced by WorkManager. The only impact is the change in dependencies in the Gradle file (cf. Other libraries)
-	- The Selligent SDK was tested with the latest version of the PlotProject library (3.10.0 at the time of writing) which can be safely used.
+	- The Engage SDK was tested with the latest version of the PlotProject library (3.10.0 at the time of writing) which can be safely used.
 - Version 3.0.0
 	- Adapted the SDK to be compatible with Firebase-Messaging 19 (and above), and Google-play-services 17 (and above) by replacing the "support" libraries by the corresponding AndroidX ones. This means your app must use AndroidX to use this version of the SDK. It is not compatible anymore with the support libraries and, therefore with the Firebase-Messaging 18 and below, and Google-Play-Services 16 and below.
 	- Deprecated all the broadcasts (they are still sent, though)
@@ -161,7 +165,7 @@ broadcasts by different observers depending on what you want to listen to as des
 - Version 1.4.3
 	- sendSMEvent, when used with a custom event, will only send it if the data passed is new. If all entries in the hashtable have the same values as the last time it was sent, then we won’t do anything. If you want to log when a specific action happened and the values do not change, add a date in the data.
 - Version 1.4.2
-	- Selligent SDK now available from JCenter
+	- Engage SDK now available from JCenter
 - Version 1.4
 	- SMSettings.Theme is now deprecated. This value is not used anymore as the layout of the dialog in now completely customizable (cf. Dialog).
 	- The design of a dialog does not try to adapt to the theme and the version of Android anymore, instead there is a default material layout that is entirely customizable (cf. Dialog).

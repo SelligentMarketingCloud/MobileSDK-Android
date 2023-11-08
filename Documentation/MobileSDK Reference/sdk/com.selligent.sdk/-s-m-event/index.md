@@ -4,7 +4,7 @@
 
 open class [SMEvent](index.md) : [Externalizable](https://developer.android.com/reference/kotlin/java/io/Externalizable.html)
 
-Object used to send a custom event to the Selligent platform with SMManager.sendEvent.
+Object used to send a custom event to the Marigold Engage platform with SMManager.sendEvent.
 
 #### See also
 

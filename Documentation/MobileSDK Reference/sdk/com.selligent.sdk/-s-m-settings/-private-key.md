@@ -5,4 +5,4 @@
 [androidJvm]\
 open var [PrivateKey](-private-key.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html)
 
-The private key given by Selligent to contact the legacy services.
+The private key given by Marigold Engage to contact the legacy services.

@@ -4,7 +4,7 @@
 
 interface [OnSMNotificationMessageRetrieved](index.md)
 
-This allows to write codes that will be executed after an event is sent to the Selligent platform
+This allows to write codes that will be executed after an event is sent to the Marigold Engage platform
 
 #### See also
 

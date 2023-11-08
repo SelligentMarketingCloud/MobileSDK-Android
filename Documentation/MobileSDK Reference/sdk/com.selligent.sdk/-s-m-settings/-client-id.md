@@ -5,4 +5,4 @@
 [androidJvm]\
 open var [ClientId](-client-id.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html)
 
-The client id given by Selligent to contact the web services
+The client id given by Marigold Engage to contact the web services
