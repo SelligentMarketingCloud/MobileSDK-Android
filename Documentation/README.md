@@ -122,13 +122,20 @@ The purpose of this document is to detail how to install the SDK into your App a
 </details>
 
 <details>
-  <summary>Click on the tab "Cloud Messaging", you will see the Server key and the Sender ID.</summary><br/>
+  <summary>[/!\THIS PART IS DEPRECATED AND WILL CEASE WORKING IN JUNE 2024, USE SERVICE ACCOUNTS AS DESCRIBED IN THE NEXT STEP INSTEAD]Click on the tab "Cloud Messaging", you will see the Server key and the Sender ID.</summary><br/>
   
   ![](images/Picture5.png)
+  
+  - Note the Server key, you will have to give it to the Marigold Engage platform.
 </details>
 
-- Note the Server key, you will have to give it to the Marigold Engage platform.
+<details>
+  <summary>Click on the tab "Service accounts", then click on the button "Generate new private key", do it again in the dialog and download the json file.</summary><br/>
+  
+  ![](images/Firebase-serviceAccounts.png)
+</details>
 
+- Store the json file securely as it contains your project credentials. You will have to give it to us, so we can use the API to send push notifications to your app.
 
 ## Including the SDK in your project
 
@@ -142,7 +149,7 @@ Since 3.8.3, our SDK is available on Maven Central.
 In the build.gradle file in your app module, add the following line:
 
 ```xml
-implementation 'com.selligent.sdk:selligent_mobile_sdk:4.4.0'
+implementation 'com.selligent.sdk:selligent_mobile_sdk:4.4.1'
 ```
 
 You need to have MavenCentral in your list of repositories.
