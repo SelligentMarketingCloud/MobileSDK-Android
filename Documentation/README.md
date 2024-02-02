@@ -43,7 +43,8 @@ Marigold welcomes any recommendations or suggestions regarding the manual, as it
       - [Setting a specific icon](#setting-a-specific-icon)
       - [Setting a specific Activity](#setting-a-specific-activity)
       - [Design customization](#design-customization)
-      - [Dialog](#dialog)
+      - [Dialog - XML layout](#dialog---xml-layout)
+      - [Dialog - Jetpack Compose](#dialog---jetpack-compose)
       - [Activities](#activities)
       - [Retrieving the Firebase Cloud Messaging (FCM) token from the SDK](#retrieving-the-firebase-cloud-messaging-fcm-token-from-the-sdk)
       - [Broadcast -- deprecated](#broadcast-deprecated)
@@ -149,7 +150,7 @@ Since 3.8.3, our SDK is available on Maven Central.
 In the build.gradle file in your app module, add the following line:
 
 ```xml
-implementation 'com.selligent.sdk:selligent_mobile_sdk:4.4.1'
+implementation 'com.selligent.sdk:selligent_mobile_sdk:4.5.0'
 ```
 
 You need to have MavenCentral in your list of repositories.
@@ -168,7 +169,7 @@ And select the file. Once it is done, synchronize and build the project.
 #### minSdkVersion
 The `minSdkVersion` is `21`.
 
-> The SDK was built using the Gradle Plugin 8.1.0
+> The SDK was built using the Gradle Plugin 8.1.4
 
 ## Other libraries
 You need to add some external dependencies in your app gradle file:
@@ -227,6 +228,12 @@ androidx.concurrent:concurrent-futures:1.1.0
 ```
 > <br>They replace FirebaseJobDispatcher which is deprecated and not used anymore by the Marigold Engage SDK.
 
+- Jetpack Compose (for those who use it)
+```gradle 
+  'androidx.activity:activity-compose:1.8.2'
+  platform('androidx.compose:compose-bom:2024.01.00')
+  'androidx.compose.material3:material3'
+```
 
 ## How to use the SDK
 
@@ -475,6 +482,23 @@ SMManager.getInstance().checkAndDisplayMessage(getIntent(), this, new SMInAppMes
 
 > Returning false is **not the same** as not calling `checkAndDisplayMessage`. The method also sends events to the Marigold Engage Mobile platform and executes the action behind the push or its buttons (if any).
 
+##### Jetpack Compose
+If your activities use Jetpack Compose for their UI and extend ComponentActivity, in order for our dialog to be displayed, 
+you need to add inside setContent a call to SMDialog() 
+
+```kotlin
+setContent {
+    YourAppTheme {
+      [All your UI]
+      ...
+      SMDialog()
+    }
+}
+```
+
+> Note: if your app uses Jetpack Compose but your activities extend FragmentActivity or AppCompatActivity, the "old" dialog will work
+and this call not have any effect.
+
 #### Extending SMBaseActivity
 There is a class `SMBaseActivity` in the SDK that already does everything described in the previous point and displays the push notifications. 
 You can make your activities extend it to avoid writing the code described in those points. 
@@ -530,7 +554,7 @@ If you used `SMRemoteMessageDisplayType.Notification` as value for `RemoteMessag
 
 #### Design customization
   
-#### Dialog
+#### Dialog - XML Layout
 <details>
   <summary>Some push messages are displayed as a dialog box which, by default, looks like this.</summary><br/>
     
@@ -673,6 +697,39 @@ Example:
     
   ![](images/Picture10.png)
 </details>
+
+#### Dialog - Jetpack Compose
+
+The Jetpack Compose version of our dialog uses the Material theme by default. Like any Compose component, you can pass 
+parameters to customize it. 
+
+Example:
+```kotlin
+SMDialog(containerColor = Color.White,
+        titleContentColor = Color(0xFF3ABEC0),
+        textContentColor = Color(0xFF3ABEC0),
+        buttonContainerColor = Color.White,
+        buttonContentColor = Color(0xFF3ABEC0))
+```
+<details>
+  <summary>Result:</summary><br/>
+
+![](images/Compose-dialog.jpg)
+</details>
+
+The different parameters are :
+```kotlin
+- modifier: Modifier
+- shape: Shape
+- containerColor: Color
+- titleContentColor: Color
+- textContentColor: Color
+- buttonContentColor: Color
+- buttonContainerColor: Color
+- buttonShape: Shape
+- tonalElevation: Dp
+- properties: DialogProperties
+```
 
 #### Activities
 Some other type of messages (like Map, HTML, etc.) are displayed in their own activity, not in a dialog. 
@@ -1396,7 +1453,7 @@ When asking for a permission, a text is displayed explaining why we need it. By 
 ```
   
 ## Proguard
-If you are using Proguard to minify the code of your app, add the following lines to the file `proguard-rules.pro`: 
+If you are minifying your app, add the following lines to the file `proguard-rules.pro`: 
 ```proguard
 -dontwarn com.selligent.sdk.**
 -keep class com.selligent.sdk.* { 
@@ -1404,6 +1461,10 @@ If you are using Proguard to minify the code of your app, add the following line
 } 
 
 -keep class com.google.firebase.messaging.FirebaseMessaging { *; }
+
+-keepattributes Signature
+-keep class com.google.gson.reflect.TypeToken { *; }
+-keep class * extends com.google.gson.reflect.TypeToken
 ```
   
 If you ever encounter a problem displaying the push when the app is minimised, it might be due to some methods being removed from org.json. In that case, add the following:

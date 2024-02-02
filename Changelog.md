@@ -1,5 +1,9 @@
 # SDK Changelog
 
+- Version 4.5.0
+	- Added support of Jetpack Compose when displaying a dialog
+	- Added robustness in some exception management
+
 - Version 4.4.1
 	- Fixed bug where the creation and expiration date where missing on the notification and in-app message objects
 	- Replaced Selligent by Marigold Engage in the documentation

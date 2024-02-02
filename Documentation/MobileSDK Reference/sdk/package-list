@@ -1,6 +1,7 @@
 $dokka.format:gfm-v1
 $dokka.linkExtension:md
 $dokka.location:com.selligent.sdk////PointingToDeclaration/sdk/com.selligent.sdk/index.md
+$dokka.location:com.selligent.sdk//SMDialog/#androidx.compose.ui.Modifier#androidx.compose.ui.graphics.Shape#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Color#androidx.compose.ui.graphics.Shape#androidx.compose.ui.unit.Dp#androidx.compose.ui.window.DialogProperties/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-dialog.md
 $dokka.location:com.selligent.sdk/OnSMNotificationMessageRetrieved///PointingToDeclaration/sdk/com.selligent.sdk/-on-s-m-notification-message-retrieved/index.md
 $dokka.location:com.selligent.sdk/OnSMNotificationMessageRetrieved/onError/#java.lang.Exception/PointingToDeclaration/sdk/com.selligent.sdk/-on-s-m-notification-message-retrieved/on-error.md
 $dokka.location:com.selligent.sdk/OnSMNotificationMessageRetrieved/onSuccess/#com.selligent.sdk.SMNotificationMessage/PointingToDeclaration/sdk/com.selligent.sdk/-on-s-m-notification-message-retrieved/on-success.md
@@ -39,7 +40,9 @@ $dokka.location:com.selligent.sdk/SMDeviceInfos/SMDeviceInfos/#/PointingToDeclar
 $dokka.location:com.selligent.sdk/SMEvent///PointingToDeclaration/sdk/com.selligent.sdk/-s-m-event/index.md
 $dokka.location:com.selligent.sdk/SMEvent/Callback/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-event/-callback.md
 $dokka.location:com.selligent.sdk/SMEvent/Data/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-event/-data.md
+$dokka.location:com.selligent.sdk/SMEvent/Profile/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-event/-profile.md
 $dokka.location:com.selligent.sdk/SMEvent/SMEvent/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-event/-s-m-event.md
+$dokka.location:com.selligent.sdk/SMEvent/SMEvent/#java.lang.String#java.lang.String#java.util.Hashtable<java.lang.String,java.lang.String>#com.selligent.sdk.SMCallback/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-event/-s-m-event.md
 $dokka.location:com.selligent.sdk/SMEvent/SMEvent/#java.lang.String#java.util.Hashtable<java.lang.String,java.lang.String>#com.selligent.sdk.SMCallback/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-event/-s-m-event.md
 $dokka.location:com.selligent.sdk/SMEvent/SMEvent/#java.util.Hashtable<java.lang.String,java.lang.String>#com.selligent.sdk.SMCallback/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-event/-s-m-event.md
 $dokka.location:com.selligent.sdk/SMEvent/equals/#java.lang.Object/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-event/equals.md
@@ -116,11 +119,8 @@ $dokka.location:com.selligent.sdk/SMInAppMessage/SMInAppMessage/#java.lang.Strin
 $dokka.location:com.selligent.sdk/SMInAppMessage/equals/#java.lang.Object/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-in-app-message/equals.md
 $dokka.location:com.selligent.sdk/SMInAppMessage/getBody/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-in-app-message/get-body.md
 $dokka.location:com.selligent.sdk/SMInAppMessage/getButtons/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-in-app-message/get-buttons.md
-$dokka.location:com.selligent.sdk/SMInAppMessage/getCreationDate/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-in-app-message/get-creation-date.md
-$dokka.location:com.selligent.sdk/SMInAppMessage/getExpirationDate/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-in-app-message/get-expiration-date.md
 $dokka.location:com.selligent.sdk/SMInAppMessage/getId/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-in-app-message/get-id.md
 $dokka.location:com.selligent.sdk/SMInAppMessage/getMarkers/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-in-app-message/get-markers.md
-$dokka.location:com.selligent.sdk/SMInAppMessage/getReceptionDate/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-in-app-message/get-reception-date.md
 $dokka.location:com.selligent.sdk/SMInAppMessage/getTitle/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-in-app-message/get-title.md
 $dokka.location:com.selligent.sdk/SMInAppMessage/getType/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-in-app-message/get-type.md
 $dokka.location:com.selligent.sdk/SMInAppMessage/hasBeenSeen/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-in-app-message/has-been-seen.md
@@ -264,8 +264,6 @@ $dokka.location:com.selligent.sdk/SMNotificationButton/value/#/PointingToDeclara
 $dokka.location:com.selligent.sdk/SMNotificationButton/writeExternal/#java.io.ObjectOutput/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-notification-button/write-external.md
 $dokka.location:com.selligent.sdk/SMNotificationMessage///PointingToDeclaration/sdk/com.selligent.sdk/-s-m-notification-message/index.md
 $dokka.location:com.selligent.sdk/SMNotificationMessage/SMNotificationMessage/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-notification-message/-s-m-notification-message.md
-$dokka.location:com.selligent.sdk/SMNotificationMessage/getCreationDate/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-notification-message/get-creation-date.md
-$dokka.location:com.selligent.sdk/SMNotificationMessage/getExpirationDate/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-notification-message/get-expiration-date.md
 $dokka.location:com.selligent.sdk/SMNotificationMessage/getIAMBody/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-notification-message/get-i-a-m-body.md
 $dokka.location:com.selligent.sdk/SMNotificationMessage/getIAMButtons/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-notification-message/get-i-a-m-buttons.md
 $dokka.location:com.selligent.sdk/SMNotificationMessage/getIAMMarkers/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-notification-message/get-i-a-m-markers.md
@@ -278,7 +276,6 @@ $dokka.location:com.selligent.sdk/SMNotificationMessage/getMediaUrl/#/PointingTo
 $dokka.location:com.selligent.sdk/SMNotificationMessage/getNotificationBody/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-notification-message/get-notification-body.md
 $dokka.location:com.selligent.sdk/SMNotificationMessage/getNotificationButtons/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-notification-message/get-notification-buttons.md
 $dokka.location:com.selligent.sdk/SMNotificationMessage/getNotificationTitle/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-notification-message/get-notification-title.md
-$dokka.location:com.selligent.sdk/SMNotificationMessage/getReceptionDate/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-notification-message/get-reception-date.md
 $dokka.location:com.selligent.sdk/SMObserverManager///PointingToDeclaration/sdk/com.selligent.sdk/-s-m-observer-manager/index.md
 $dokka.location:com.selligent.sdk/SMObserverManager/SMObserverManager/#/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-observer-manager/-s-m-observer-manager.md
 $dokka.location:com.selligent.sdk/SMObserverManager/observeClickedButton/#androidx.lifecycle.LifecycleOwner#androidx.lifecycle.Observer<com.selligent.sdk.SMNotificationButton>#boolean/PointingToDeclaration/sdk/com.selligent.sdk/-s-m-observer-manager/observe-clicked-button.md

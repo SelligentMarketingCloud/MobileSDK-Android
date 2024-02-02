@@ -25,7 +25,7 @@ Object used to send a &quot;logout&quot; event to the Marigold Engage platform w
 | [Callback](../-s-m-event/-callback.md) | [androidJvm]<br>open var [Callback](../-s-m-event/-callback.md): [SMCallback](../-s-m-callback/index.md)<br>A SMCallback object containing code to execute after the message is sent |
 | [Data](../-s-m-event/-data.md) | [androidJvm]<br>open var [Data](../-s-m-event/-data.md): [Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable.html)&lt;[String](https://developer.android.com/reference/kotlin/java/lang/String.html), [String](https://developer.android.com/reference/kotlin/java/lang/String.html)&gt;<br>Custom data |
 | [Email](../-s-m-event-user-unregister/index.md#1053791770%2FProperties%2F462465411) | [androidJvm]<br>open var [~~Email~~](../-s-m-event-user-unregister/index.md#1053791770%2FProperties%2F462465411): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
-| [Profile](../-s-m-event-user-unregister/index.md#-952461715%2FProperties%2F462465411) | [androidJvm]<br>open var [Profile](../-s-m-event-user-unregister/index.md#-952461715%2FProperties%2F462465411): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
+| [Profile](../-s-m-event/-profile.md) | [androidJvm]<br>@NotNull<br>open var [Profile](../-s-m-event/-profile.md): @NotNull[String](https://developer.android.com/reference/kotlin/java/lang/String.html)<br>The profile id of the user (depending on your app, it can be an e-mail address, a user ID, etc.). |
 
 ## Functions
 
