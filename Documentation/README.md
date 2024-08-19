@@ -150,7 +150,7 @@ Since 3.8.3, our SDK is available on Maven Central.
 In the build.gradle file in your app module, add the following line:
 
 ```xml
-implementation 'com.selligent.sdk:selligent_mobile_sdk:4.5.0'
+implementation 'com.selligent.sdk:selligent_mobile_sdk:4.6.0'
 ```
 
 You need to have MavenCentral in your list of repositories.
@@ -169,19 +169,19 @@ And select the file. Once it is done, synchronize and build the project.
 #### minSdkVersion
 The `minSdkVersion` is `21`.
 
-> The SDK was built using the Gradle Plugin 8.1.4
+> The SDK was built using the Gradle Plugin 8.2.2
 
 ## Other libraries
 You need to add some external dependencies in your app gradle file:
 - Firebase messaging and Firebase-core 
   - If your version of Gradle is 5 or higher, you can simply add
     ```gradle
-    implementation platform('com.google.firebase:firebase-bom:32.2.0')
+    implementation platform('com.google.firebase:firebase-bom:33.1.2')
     implementation 'com.google.firebase:firebase-messaging'
     ```
   - If you are using a lower version of Gradle, you need to specify the version of Firebase-messaging 
     ```gradle
-    com.google.firebase:firebase-messaging:23.2.0
+    com.google.firebase:firebase-messaging:24.0.0
     ```
  
 The version of Firebase must be at least 19 to be compatible with our SDK 3.x. Firebase 19 requires the use of the "AndroidX" libraries instead of the old "support" ones. 
@@ -201,7 +201,7 @@ apply plugin: 'com.google.gms.google-services'
 
 - Kotlin coroutines
 ```gradle
-androidx.lifecycle:lifecycle-runtime-ktx:2.6.1
+androidx.lifecycle:lifecycle-runtime-ktx:2.8.4
 org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3
 ```
   
@@ -230,8 +230,8 @@ androidx.concurrent:concurrent-futures:1.1.0
 
 - Jetpack Compose (for those who use it)
 ```gradle 
-  'androidx.activity:activity-compose:1.8.2'
-  platform('androidx.compose:compose-bom:2024.01.00')
+  'androidx.activity:activity-compose:1.9.1'
+  platform('androidx.compose:compose-bom:2024.06.00')
   'androidx.compose.material3:material3'
 ```
 

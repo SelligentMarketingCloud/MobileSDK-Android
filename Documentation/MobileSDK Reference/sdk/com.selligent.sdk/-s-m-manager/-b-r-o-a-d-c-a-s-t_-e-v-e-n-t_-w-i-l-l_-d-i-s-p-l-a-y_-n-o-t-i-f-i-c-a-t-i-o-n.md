@@ -13,7 +13,7 @@ Since version 3.0.0
 
 ---
 
-String representing a broadcast name you can listen to. It is broadcasted shortly before displaying a remote-notification Primary-application may use this broadcast to pause any ongoing work before the remote-notification is displayed. This broadcast is also triggered even if you disable shouldDisplayRemoteNotification (see [SMSettings](../-s-m-settings/index.md)). This broadcast is sent locally using [sendBroadcast](https://developer.android.com/reference/kotlin/androidx/localbroadcastmanager/content/LocalBroadcastManager.html#sendbroadcast)
+String representing a broadcast name you can listen to. It is broadcasted shortly before displaying a remote-notification Primary-application may use this broadcast to pause any ongoing work before the remote-notification is displayed. This broadcast is also triggered even if you disable shouldDisplayRemoteNotification (see [SMSettings](../-s-m-settings/index.md)). This broadcast is sent locally using sendBroadcast
 
 #### Deprecated
 
@@ -23,5 +23,5 @@ LocalBroadcastManager being deprecated in latest versions of the androidx librar
 
 | |
 |---|
-| [LocalBroadcastManager](https://developer.android.com/reference/kotlin/androidx/localbroadcastmanager/content/LocalBroadcastManager.html#sendbroadcast) |
+| LocalBroadcastManager |
 | [BROADCAST_EVENT_WILL_DISMISS_NOTIFICATION](-b-r-o-a-d-c-a-s-t_-e-v-e-n-t_-w-i-l-l_-d-i-s-m-i-s-s_-n-o-t-i-f-i-c-a-t-i-o-n.md) |

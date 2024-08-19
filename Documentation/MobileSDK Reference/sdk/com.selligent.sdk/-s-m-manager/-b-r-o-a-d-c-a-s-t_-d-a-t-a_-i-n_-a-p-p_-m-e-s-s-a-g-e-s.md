@@ -13,7 +13,7 @@ Since version 3.0.0
 
 ---
 
-String representing a key to retrieve an object inside an intent Use this key to retrieve an array of [SMInAppMessage](../-s-m-in-app-message/index.md) from the intent received from the broadcast [BROADCAST_EVENT_RECEIVED_IN_APP_MESSAGE](-b-r-o-a-d-c-a-s-t_-e-v-e-n-t_-r-e-c-e-i-v-e-d_-i-n_-a-p-p_-m-e-s-s-a-g-e.md). This broadcast is sent locally using [sendBroadcast](https://developer.android.com/reference/kotlin/androidx/localbroadcastmanager/content/LocalBroadcastManager.html#sendbroadcast)
+String representing a key to retrieve an object inside an intent Use this key to retrieve an array of [SMInAppMessage](../-s-m-in-app-message/index.md) from the intent received from the broadcast [BROADCAST_EVENT_RECEIVED_IN_APP_MESSAGE](-b-r-o-a-d-c-a-s-t_-e-v-e-n-t_-r-e-c-e-i-v-e-d_-i-n_-a-p-p_-m-e-s-s-a-g-e.md). This broadcast is sent locally using sendBroadcast
 
 #### Deprecated
 
@@ -23,6 +23,6 @@ LocalBroadcastManager being deprecated in latest versions of the androidx librar
 
 | |
 |---|
-| [LocalBroadcastManager](https://developer.android.com/reference/kotlin/androidx/localbroadcastmanager/content/LocalBroadcastManager.html#sendbroadcast) |
+| LocalBroadcastManager |
 | [SMInAppMessage](../-s-m-in-app-message/index.md) |
 | [BROADCAST_EVENT_RECEIVED_IN_APP_MESSAGE](-b-r-o-a-d-c-a-s-t_-e-v-e-n-t_-r-e-c-e-i-v-e-d_-i-n_-a-p-p_-m-e-s-s-a-g-e.md) |

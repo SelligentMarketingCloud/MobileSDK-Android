@@ -13,7 +13,7 @@ Since version 3.0.0
 
 ---
 
-String representing a broadcast name you can listen to. It is broadcasted after receiving the GCM token and only if it changed. Primary-application may use this broadcast to retrieve the GCM token. This broadcast is sent locally using [sendBroadcast](https://developer.android.com/reference/kotlin/androidx/localbroadcastmanager/content/LocalBroadcastManager.html#sendbroadcast)
+String representing a broadcast name you can listen to. It is broadcasted after receiving the GCM token and only if it changed. Primary-application may use this broadcast to retrieve the GCM token. This broadcast is sent locally using sendBroadcast
 
 #### Deprecated
 
@@ -23,4 +23,4 @@ LocalBroadcastManager being deprecated in latest versions of the androidx librar
 
 | |
 |---|
-| [LocalBroadcastManager](https://developer.android.com/reference/kotlin/androidx/localbroadcastmanager/content/LocalBroadcastManager.html#sendbroadcast) |
+| LocalBroadcastManager |
