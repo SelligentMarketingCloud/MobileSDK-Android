@@ -150,7 +150,7 @@ Since 3.8.3, our SDK is available on Maven Central.
 In the build.gradle file in your app module, add the following line:
 
 ```xml
-implementation 'com.selligent.sdk:selligent_mobile_sdk:4.6.0'
+implementation 'com.selligent.sdk:selligent_mobile_sdk:4.6.1'
 ```
 
 You need to have MavenCentral in your list of repositories.
