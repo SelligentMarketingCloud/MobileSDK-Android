@@ -3,7 +3,7 @@
 # onBeforeDisplay
 
 [androidJvm]\
-abstract fun [onBeforeDisplay](on-before-display.md)(message: [SMInAppMessage](../-s-m-in-app-message/index.md)): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+abstract fun [onBeforeDisplay](on-before-display.md)(message: [SMInAppMessage](../-s-m-in-app-message/index.md)): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html)
 
 This method is called before displaying an In-App Message linked to a push notification.
 

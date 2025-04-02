@@ -3,7 +3,7 @@
 # areInAppMessagesEnabled
 
 [androidJvm]\
-open fun [areInAppMessagesEnabled](are-in-app-messages-enabled.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+open fun [areInAppMessagesEnabled](are-in-app-messages-enabled.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html)
 
 This method tells if the management of In App messages is enabled or not
 

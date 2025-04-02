@@ -18,8 +18,8 @@ This class represents a point on a map.
 | Name | Summary |
 |---|---|
 | [description](description.md) | [androidJvm]<br>@SerializedName(value = &quot;desc&quot;)<br>open val [description](description.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
-| [latitude](latitude.md) | [androidJvm]<br>@SerializedName(value = &quot;lat&quot;)<br>open val [latitude](latitude.md): [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) |
-| [longitude](longitude.md) | [androidJvm]<br>@SerializedName(value = &quot;lng&quot;)<br>open val [longitude](longitude.md): [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) |
+| [latitude](latitude.md) | [androidJvm]<br>@SerializedName(value = &quot;lat&quot;)<br>open val [latitude](latitude.md): [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-double/index.html) |
+| [longitude](longitude.md) | [androidJvm]<br>@SerializedName(value = &quot;lng&quot;)<br>open val [longitude](longitude.md): [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-double/index.html) |
 | [title](title.md) | [androidJvm]<br>open val [title](title.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
 
 ## Functions

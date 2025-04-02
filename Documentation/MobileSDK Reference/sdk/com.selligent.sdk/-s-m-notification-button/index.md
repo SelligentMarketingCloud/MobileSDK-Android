@@ -26,14 +26,14 @@ Object containing all the data used to implement a button in a notification/mess
 | [data](data.md) | [androidJvm]<br>open var [data](data.md): [Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable.html)&lt;[String](https://developer.android.com/reference/kotlin/java/lang/String.html), [String](https://developer.android.com/reference/kotlin/java/lang/String.html)&gt; |
 | [id](id.md) | [androidJvm]<br>open var [id](id.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
 | [label](label.md) | [androidJvm]<br>open var [label](label.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
-| [type](type.md) | [androidJvm]<br>open var [type](type.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| [type](type.md) | [androidJvm]<br>open var [type](type.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html) |
 | [value](value.md) | [androidJvm]<br>open var [value](value.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
 
 ## Functions
 
 | Name | Summary |
 |---|---|
-| [getAction](get-action.md) | [androidJvm]<br>open fun [~~getAction~~](get-action.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)<br>The action that will be executed when clicking on the button. |
+| [getAction](get-action.md) | [androidJvm]<br>open fun [~~getAction~~](get-action.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html)<br>The action that will be executed when clicking on the button. |
 | [getId](get-id.md) | [androidJvm]<br>open fun [getId](get-id.md)(): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
 | [getLabel](get-label.md) | [androidJvm]<br>open fun [getLabel](get-label.md)(): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
 | [getLinkAction](get-link-action.md) | [androidJvm]<br>open fun [getLinkAction](get-link-action.md)(): [SMLinkAction](../-s-m-link-action/index.md) |

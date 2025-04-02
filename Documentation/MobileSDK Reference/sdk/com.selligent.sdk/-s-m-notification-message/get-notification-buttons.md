@@ -3,7 +3,7 @@
 # getNotificationButtons
 
 [androidJvm]\
-open fun [getNotificationButtons](get-notification-buttons.md)(): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)&lt;[SMNotificationButton](../-s-m-notification-button/index.md)&gt;
+open fun [getNotificationButtons](get-notification-buttons.md)(): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-array/index.html)&lt;[SMNotificationButton](../-s-m-notification-button/index.md)&gt;
 
 Gets the buttons of the notification
 

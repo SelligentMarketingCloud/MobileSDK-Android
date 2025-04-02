@@ -21,14 +21,14 @@ A link of an [SMInAppContent](../-s-m-in-app-content/index.md).
 | [data](../-s-m-notification-button/data.md) | [androidJvm]<br>open var [data](../-s-m-notification-button/data.md): [Hashtable](https://developer.android.com/reference/kotlin/java/util/Hashtable.html)&lt;[String](https://developer.android.com/reference/kotlin/java/lang/String.html), [String](https://developer.android.com/reference/kotlin/java/lang/String.html)&gt; |
 | [id](../-s-m-notification-button/id.md) | [androidJvm]<br>open var [id](../-s-m-notification-button/id.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
 | [label](../-s-m-notification-button/label.md) | [androidJvm]<br>open var [label](../-s-m-notification-button/label.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
-| [type](../-s-m-notification-button/type.md) | [androidJvm]<br>open var [type](../-s-m-notification-button/type.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) |
+| [type](../-s-m-notification-button/type.md) | [androidJvm]<br>open var [type](../-s-m-notification-button/type.md): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html) |
 | [value](../-s-m-notification-button/value.md) | [androidJvm]<br>open var [value](../-s-m-notification-button/value.md): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
 
 ## Functions
 
 | Name | Summary |
 |---|---|
-| [getAction](../-s-m-notification-button/get-action.md) | [androidJvm]<br>open fun [~~getAction~~](../-s-m-notification-button/get-action.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)<br>The action that will be executed when clicking on the button. |
+| [getAction](../-s-m-notification-button/get-action.md) | [androidJvm]<br>open fun [~~getAction~~](../-s-m-notification-button/get-action.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html)<br>The action that will be executed when clicking on the button. |
 | [getId](../-s-m-notification-button/get-id.md) | [androidJvm]<br>open fun [getId](../-s-m-notification-button/get-id.md)(): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
 | [getLabel](../-s-m-notification-button/get-label.md) | [androidJvm]<br>open fun [getLabel](../-s-m-notification-button/get-label.md)(): [String](https://developer.android.com/reference/kotlin/java/lang/String.html) |
 | [getLinkAction](../-s-m-notification-button/get-link-action.md) | [androidJvm]<br>open fun [getLinkAction](../-s-m-notification-button/get-link-action.md)(): [SMLinkAction](../-s-m-link-action/index.md) |

@@ -3,7 +3,7 @@
 # areNotificationsAllowedByOS
 
 [androidJvm]\
-open fun [areNotificationsAllowedByOS](are-notifications-allowed-by-o-s.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+open fun [areNotificationsAllowedByOS](are-notifications-allowed-by-o-s.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html)
 
 This method tells if the notifications are allowed at OS level
 

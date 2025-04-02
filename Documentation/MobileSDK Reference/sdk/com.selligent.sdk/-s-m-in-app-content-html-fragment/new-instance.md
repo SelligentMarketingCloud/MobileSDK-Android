@@ -20,7 +20,7 @@ androidJvm
 | category | String specifying the category of the content |
 
 [androidJvm]\
-open fun [newInstance](new-instance.md)(category: [String](https://developer.android.com/reference/kotlin/java/lang/String.html), count: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)): [SMInAppContentHtmlFragment](index.md)
+open fun [newInstance](new-instance.md)(category: [String](https://developer.android.com/reference/kotlin/java/lang/String.html), count: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html)): [SMInAppContentHtmlFragment](index.md)
 
 Method used to create a new instance of SMInAppContentHtmlFragment
 

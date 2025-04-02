@@ -3,7 +3,7 @@
 # getCreationDate
 
 [androidJvm]\
-open fun [getCreationDate](get-creation-date.md)(): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)
+open fun [getCreationDate](get-creation-date.md)(): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html)
 
 Gets the creation date of the SMInAppContent
 

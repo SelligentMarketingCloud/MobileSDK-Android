@@ -3,7 +3,7 @@
 # hasBeenFirstSeenInCurrentSession
 
 [androidJvm]\
-open fun [hasBeenFirstSeenInCurrentSession](has-been-first-seen-in-current-session.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)
+open fun [hasBeenFirstSeenInCurrentSession](has-been-first-seen-in-current-session.md)(): [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html)
 
 Tells if the SMInAppContent has already been seen or not in the current session.
 

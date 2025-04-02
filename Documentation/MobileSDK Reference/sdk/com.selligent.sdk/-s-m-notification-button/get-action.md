@@ -3,7 +3,7 @@
 # getAction
 
 [androidJvm]\
-open fun [~~getAction~~](get-action.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+open fun [~~getAction~~](get-action.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html)
 
 ---
 

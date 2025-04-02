@@ -3,7 +3,7 @@
 # getExpirationDate
 
 [androidJvm]\
-open fun [getExpirationDate](get-expiration-date.md)(): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)
+open fun [getExpirationDate](get-expiration-date.md)(): [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-long/index.html)
 
 Gets the expiration date of the SMInAppContent
 

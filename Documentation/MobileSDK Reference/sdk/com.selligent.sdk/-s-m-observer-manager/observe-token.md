@@ -23,7 +23,7 @@ androidJvm
 
 @[MainThread](https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html)
 
-open fun [observeToken](observe-token.md)(@[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)lifecycleOwner: [LifecycleOwner](https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html), @[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)observer: [Observer](https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html)&lt;[String](https://developer.android.com/reference/kotlin/java/lang/String.html)&gt;, triggerEveryTime: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
+open fun [observeToken](observe-token.md)(@[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)lifecycleOwner: [LifecycleOwner](https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html), @[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)observer: [Observer](https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html)&lt;[String](https://developer.android.com/reference/kotlin/java/lang/String.html)&gt;, triggerEveryTime: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html))
 
 Use this method to get notified when a new Firebase token was received by the SDK. It replaces the broadcast BROADCAST_EVENT_RECEIVED_GCM_TOKEN. It must be called on the main thread.
 

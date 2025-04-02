@@ -23,7 +23,7 @@ androidJvm
 
 @[MainThread](https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html)
 
-open fun [observePushReceived](observe-push-received.md)(@[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)lifecycleOwner: [LifecycleOwner](https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html), @[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)observer: [Observer](https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html)&lt;[SMNotificationMessage](../-s-m-notification-message/index.md)&gt;, triggerEveryTime: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
+open fun [observePushReceived](observe-push-received.md)(@[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)lifecycleOwner: [LifecycleOwner](https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html), @[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)observer: [Observer](https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html)&lt;[SMNotificationMessage](../-s-m-notification-message/index.md)&gt;, triggerEveryTime: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html))
 
 Use this method to get notified when a push notification is received while the app is in foreground. It must be called on the main thread.
 

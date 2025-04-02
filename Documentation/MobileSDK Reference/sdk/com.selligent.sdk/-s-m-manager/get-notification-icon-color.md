@@ -3,7 +3,7 @@
 # getNotificationIconColor
 
 [androidJvm]\
-open fun [getNotificationIconColor](get-notification-icon-color.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+open fun [getNotificationIconColor](get-notification-icon-color.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html)
 
 Gets the icon color set by setNotificationIconColor.
 

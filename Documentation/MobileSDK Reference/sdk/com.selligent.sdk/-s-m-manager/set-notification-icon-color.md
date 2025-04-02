@@ -3,7 +3,7 @@
 # setNotificationIconColor
 
 [androidJvm]\
-open fun [setNotificationIconColor](set-notification-icon-color.md)(argb: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html))
+open fun [setNotificationIconColor](set-notification-icon-color.md)(argb: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html))
 
 This allows the SDK to set a specific color to the icon for the notifications.
 

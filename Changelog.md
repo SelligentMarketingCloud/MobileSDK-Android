@@ -1,5 +1,9 @@
 # SDK Changelog
 
+- Version 4.7.0
+	- Ensured compatibility with Android 16 (API 36)
+	- Upgraded Gradle Plugin to 8.9.1
+
 - Version 4.6.1
 	- Fixed a bug where the In-App title is empty
 

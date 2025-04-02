@@ -3,7 +3,7 @@
 # onError
 
 [androidJvm]\
-abstract fun [onError](on-error.md)(httpResponseCode: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html), exception: [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html))
+abstract fun [onError](on-error.md)(httpResponseCode: [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html), exception: [Exception](https://developer.android.com/reference/kotlin/java/lang/Exception.html))
 
 Event triggered when an error occured while sending the SMEvent
 

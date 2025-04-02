@@ -3,4 +3,4 @@
 # getValue
 
 [androidJvm]\
-open fun [getValue](get-value.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+open fun [getValue](get-value.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html)

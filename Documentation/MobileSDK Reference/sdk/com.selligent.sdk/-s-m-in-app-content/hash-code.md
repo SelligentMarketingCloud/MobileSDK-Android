@@ -3,7 +3,7 @@
 # hashCode
 
 [androidJvm]\
-open fun [hashCode](hash-code.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)
+open fun [hashCode](hash-code.md)(): [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-int/index.html)
 
 Returns an integer hash code for this object. By contract, any two objects for which [equals](equals.md) returns true must return the same hash code value. This means that subclasses of Object usually override both methods or neither method.
 

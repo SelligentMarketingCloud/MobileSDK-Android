@@ -3,7 +3,7 @@
 # deleteInAppMessages
 
 [androidJvm]\
-open fun [deleteInAppMessages](delete-in-app-messages.md)(messageIds: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)&lt;[String](https://developer.android.com/reference/kotlin/java/lang/String.html)&gt;)
+open fun [deleteInAppMessages](delete-in-app-messages.md)(messageIds: [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-array/index.html)&lt;[String](https://developer.android.com/reference/kotlin/java/lang/String.html)&gt;)
 
 This method deletes several In-App Messages at once.
 

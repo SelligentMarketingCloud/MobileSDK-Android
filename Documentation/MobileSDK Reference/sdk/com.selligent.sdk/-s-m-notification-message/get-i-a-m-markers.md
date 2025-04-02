@@ -3,7 +3,7 @@
 # getIAMMarkers
 
 [androidJvm]\
-open fun [getIAMMarkers](get-i-a-m-markers.md)(): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)&lt;[SMMapMarker](../-s-m-map-marker/index.md)&gt;
+open fun [getIAMMarkers](get-i-a-m-markers.md)(): [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-array/index.html)&lt;[SMMapMarker](../-s-m-map-marker/index.md)&gt;
 
 Gets the list of the markers for the In-app message linked to the notification
 

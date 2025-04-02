@@ -23,7 +23,7 @@ androidJvm
 
 @[MainThread](https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html)
 
-open fun [observeClickedButton](observe-clicked-button.md)(@[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)lifecycleOwner: [LifecycleOwner](https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html), @[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)observer: [Observer](https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html)&lt;[SMNotificationButton](../-s-m-notification-button/index.md)&gt;, triggerEveryTime: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
+open fun [observeClickedButton](observe-clicked-button.md)(@[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)lifecycleOwner: [LifecycleOwner](https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html), @[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)observer: [Observer](https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html)&lt;[SMNotificationButton](../-s-m-notification-button/index.md)&gt;, triggerEveryTime: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html))
 
 Use this method to get notified when a button of an notification or of an In-App message is clicked or when the main action of a push is executed. It replaces the broadcast BROADCAST_EVENT_BUTTON_CLICKED. It must be called on the main thread.
 

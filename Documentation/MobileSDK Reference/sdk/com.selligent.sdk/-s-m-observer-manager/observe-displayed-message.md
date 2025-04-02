@@ -23,7 +23,7 @@ androidJvm
 
 @[MainThread](https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html)
 
-open fun [observeDisplayedMessage](observe-displayed-message.md)(@[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)lifecycleOwner: [LifecycleOwner](https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html), @[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)observer: [Observer](https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html)&lt;[Void](https://developer.android.com/reference/kotlin/java/lang/Void.html)&gt;, triggerEveryTime: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html))
+open fun [observeDisplayedMessage](observe-displayed-message.md)(@[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)lifecycleOwner: [LifecycleOwner](https://developer.android.com/reference/kotlin/androidx/lifecycle/LifecycleOwner.html), @[NonNull](https://developer.android.com/reference/kotlin/androidx/annotation/NonNull.html)observer: [Observer](https://developer.android.com/reference/kotlin/androidx/lifecycle/Observer.html)&lt;[Void](https://developer.android.com/reference/kotlin/java/lang/Void.html)&gt;, triggerEveryTime: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin-stdlib/kotlin/-boolean/index.html))
 
 Use this method to get notified when an In-App message is about to be displayed. It replaces the broadcast BROADCAST_EVENT_WILL_DISPLAY_NOTIFICATION. It must be called on the main thread.
 
