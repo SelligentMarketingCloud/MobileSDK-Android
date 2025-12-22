@@ -1,8 +1,8 @@
 # MobileSDK-Android
 
-What is the Marigold Engage - Mobile SDK for Android?
+What is the Selligent - Mobile SDK for Android?
 
-The Marigold Engage - Mobile SDK is a tool that enables you to use the Marigold Engage - Mobile feature in a very easy and straightforward way. 
+The Selligent - Mobile SDK is a tool that enables you to use the Selligent - Mobile feature in a very easy and straightforward way. 
 
 By incorporating our latest SDK for Android in your app, we support you in handling push messages, in app messages, in app content, standard and custom events as well as logins and logouts in the app.
 

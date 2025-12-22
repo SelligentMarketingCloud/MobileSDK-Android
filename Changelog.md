@@ -2,6 +2,7 @@
 
 - Version 4.7.1
 	- Fixed bug where the creation date was empty when in-app message from push is copied to in-app message list
+	
 - Version 4.7.0
 	- Ensured compatibility with Android 16 (API 36)
 	- Upgraded Gradle Plugin to 8.9.1
