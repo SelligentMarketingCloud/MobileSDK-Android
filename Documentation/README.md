@@ -150,7 +150,7 @@ Since 3.8.3, our SDK is available on Maven Central.
 In the build.gradle file in your app module, add the following line:
 
 ```xml
-implementation 'com.selligent.sdk:selligent_mobile_sdk:4.7.1'
+implementation 'com.selligent.sdk:selligent_mobile_sdk:4.8.0'
 ```
 
 You need to have MavenCentral in your list of repositories.
@@ -167,21 +167,21 @@ If you prefer to directly add the aar file, create a new module that will contai
 And select the file. Once it is done, synchronize and build the project.
 
 #### minSdkVersion
-The `minSdkVersion` is `21`.
+The `minSdkVersion` is `23`.
 
-> The SDK was built using the Gradle Plugin 8.9.1
+> The SDK was built using the Gradle Plugin 9.2.0
 
 ## Other libraries
 You need to add some external dependencies in your app gradle file:
 - Firebase messaging and Firebase-core 
   - If your version of Gradle is 5 or higher, you can simply add
     ```gradle
-    implementation platform('com.google.firebase:firebase-bom:33.12.0')
+    implementation platform('com.google.firebase:firebase-bom:34.12.0')
     implementation 'com.google.firebase:firebase-messaging'
     ```
   - If you are using a lower version of Gradle, you need to specify the version of Firebase-messaging 
     ```gradle
-    com.google.firebase:firebase-messaging:24.1.1
+    com.google.firebase:firebase-messaging:25.0.1
     ```
  
 The version of Firebase must be at least 19 to be compatible with our SDK 3.x. Firebase 19 requires the use of the "AndroidX" libraries instead of the old "support" ones. 
@@ -201,8 +201,8 @@ apply plugin: 'com.google.gms.google-services'
 
 - Kotlin coroutines
 ```gradle
-androidx.lifecycle:lifecycle-runtime-ktx:2.8.7
-org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3
+androidx.lifecycle:lifecycle-runtime-ktx:2.10.0
+org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2
 ```
   
 - If you plan on sending Map type push, you need a dependency to play-services-maps:
@@ -223,15 +223,15 @@ androidx.cardview:cardview
 - WorkManager 
 > **These two dependencies are mandatory if you are going to send encrypted push to your app or rich push.** 
 ```gradle
-androidx.work:work-runtime:2.10.0
-androidx.concurrent:concurrent-futures:1.2.0
+androidx.work:work-runtime:2.11.2
+androidx.concurrent:concurrent-futures:1.3.0
 ```
 > <br>They replace FirebaseJobDispatcher which is deprecated and not used anymore by the Selligent SDK.
 
 - Jetpack Compose (for those who use it)
 ```gradle 
-  'androidx.activity:activity-compose:1.10.1'
-  platform('androidx.compose:compose-bom:2025.03.01')
+  'androidx.activity:activity-compose:1.13.0'
+  platform('androidx.compose:compose-bom:2026.04.01')
   'androidx.compose.material3:material3'
 ```
 
@@ -339,7 +339,7 @@ There are two ways for you to retrieve it, should you need it:
 
 ```java
 // This method will return the device id stored by the SDK. Note that, as the device id is given by the Selligent Mobile Platform, it is possible that the value returned is empty when the call is made.
-SMManager.getInstance().getDevideId()
+SMManager.getInstance().getDeviceId()
 
 // This will allow you to observe the device id and receive it when it is received by the SDK.
 SMManager.getInstance().getObserverManager().observeDeviceId()
@@ -1497,6 +1497,7 @@ SMManager.NOTIFICATION_ACTIVITY = this.getClass();
 > We want the In-App message linked to the push to be displayed anywhere, except in the splash screen
 
 Start the SDK in your Application and set `NOTIFICATION_ACTIVITY` to your splash activity. 
+Be sure to have `android:launchMode="singleTask"` to your splash activity in AndroidManifest.xml
   
 Do everything else like described above except for your splash Activity. There, don’t call any of the SDK method but, when starting your main activity, transfer the push information to it like this:
 ```java
@@ -1565,4 +1566,6 @@ It will allow a push received while on the splashscreen to be transferred to the
   - A: Check the url defined and the app and the one set in the push, if there is any difference (even the slightest, like a part in uppercase in one and lowercase in the other), the deep link will not be triggered.
 - **Q: Why don’t I see the push/Why is the push missing buttons/image when the app is minified**
   - A: Since an update in the minification process, some methods from org.json can be removed by R8, making the extraction of the data from the push crash. To prevent this, add the following line in proguard: `-keep class org.json.** { *; }`
+  **Q: I have a splash activity that redirects to the main activity. When several notification are created while the app is killed, only the action on the first one tapped is executed.
+  - A: Be sure to have `android:launchMode="singleTask"` to your splash activity in AndroidManifest.xml
  

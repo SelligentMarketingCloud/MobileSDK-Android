@@ -1,4 +1,9 @@
 # SDK Changelog
+- Version 4.8.0
+	- Ensured compatibility with Android 17 (API 37)
+	- Upgraded Gradle Plugin to 9.2.0
+	- Increased minSdkVersion to 23 (Android 6.0)
+	- Fixed bug where the activity is recreated when tapping a notification while the app is in background
 
 - Version 4.7.1
 	- Fixed bug where the creation date was empty when in-app message from push is copied to in-app message list
