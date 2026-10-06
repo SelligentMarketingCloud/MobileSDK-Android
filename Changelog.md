@@ -1,4 +1,6 @@
 # SDK Changelog
+- Version 4.8.1
+	- Added missing header in JWT
 - Version 4.8.0
 	- Ensured compatibility with Android 17 (API 37)
 	- Upgraded Gradle Plugin to 9.2.0
